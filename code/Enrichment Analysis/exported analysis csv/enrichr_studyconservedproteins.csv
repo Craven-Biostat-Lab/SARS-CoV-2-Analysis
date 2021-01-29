@@ -1,0 +1,402 @@
+Library_Name,rank_within_library,term_name,p_value,z_score,combined_score,overlapping_genes,adjusted_p_value,old_p_value,old_adjusted_p_value
+GO_Molecular_Function_2018,1,RNA binding (GO:0003723),1.59E-06,inf,inf,"['MOV10', 'CNBP', 'HDLBP', 'IGF2BP2', 'PABPC1']",2.07E-05,0,0
+Pfam_Domains_2019,1,KH 1,2.97E-05,403.2727273,4204.515497,"['HDLBP', 'IGF2BP2']",8.90E-05,0,0
+InterPro_Domains_2019,1,K Homology domain,3.14E-05,391.3921569,4058.316448,"['HDLBP', 'IGF2BP2']",9.96E-05,0,0
+InterPro_Domains_2019,2,"K Homology domain, type 1",3.32E-05,380.1904762,3921.077768,"['HDLBP', 'IGF2BP2']",9.96E-05,0,0
+Pfam_InterPro_Domains,1,KH type 1,3.32E-05,380.1904762,3921.077768,"['HDLBP', 'IGF2BP2']",9.96E-05,0,0
+PPI_Hub_Proteins,1,HNRNPA1,2.66E-06,234.6614173,3012.577924,"['MOV10', 'IGF2BP2', 'PABPC1']",0.000116947,0,0
+BioPlex_2017,1,ELAVL2,1.13E-06,314.2105263,4301.833892,"['MOV10', 'IGF2BP2', 'PABPC1']",0.000120064,0,0
+TF_Perturbations_Followed_by_Expression,1,RELA OE HEK293 HUMAN GSE57027 RNASEQ DOWN,2.14E-07,275.6503497,4233.185305,"['MOV10', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000121363,0,0
+COVID-19_Related_Gene_Sets,1,COVID19-N protein host PPI from Krogan,5.24E-06,1024.717949,12459.13918,"['MOV10', 'PABPC1']",0.000162535,0,0
+Genes_Associated_with_NIH_Grants,1,R01HL042488,3.90E-06,1211.151515,15085.68949,"['CNBP', 'HDLBP']",0.000257111,0,0
+Genes_Associated_with_NIH_Grants,2,R01CA045382,3.90E-06,1211.151515,15085.68949,"['HDLBP', 'PABPC1']",0.000257111,0,0
+Table_Mining_of_CRISPR_Studies,1,"Supplemental, PMC5111403 (Tablesupplemental)",4.80E-05,inf,inf,"['MOV10', 'CNBP', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000288119,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,1,KCNK1 RKO knockdown GSE68219 up,1.82E-06,158.892057,2100.243841,"['MOV10', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000379555,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,2,Cyclophosphamide LLC tumors in C57BL-6 mice GSE71491 up,1.83E-06,158.5609756,2094.590142,"['CNBP', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000379555,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,3,GATA2 Ch-CRPC (ARCaPM-DR culture(AR+)) Knockdown GSE58966 down,1.83E-06,158.5609756,2094.590142,"['CNBP', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000379555,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,4,Ptbp1 Embryonic stem cell (mESC) knockdown GSE71075 down,1.85E-06,158.2312373,2088.962099,"['MOV10', 'HDLBP', 'IGF2BP2', 'PABPC1']",0.000379555,0,0
+Drug_Perturbations_from_GEO_2014,1,paclitaxel homo sapiens gpl570 gse11552 chdir up,2.19E-06,250.5378151,3264.370094,"['CNBP', 'HDLBP', 'PABPC1']",0.000381883,0,0
+GO_Molecular_Function_2018,2,mRNA 3'-UTR binding (GO:0003730),9.71E-05,217.8579235,2013.054562,"['IGF2BP2', 'PABPC1']",0.000630867,0,0
+Microbe_Perturbations_from_GEO_up,1,respiratory syncytial virus (RSV) human bronchial epithelial cells GDS2023 microbe:179,1.06E-05,146.2463054,1675.114882,"['CNBP', 'IGF2BP2', 'PABPC1']",0.000636375,0,0
+BioPlex_2017,2,GSPT2,2.17E-05,475.4047619,5105.230681,"['MOV10', 'PABPC1']",0.001149519,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,5,MITF 501 Melanocytes knockdown GSE61966 up,8.41E-06,106.6224066,1246.009789,"['MOV10', 'CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,6,Salmonella HT-29 cells (shCTRL) 0.5hrs GSE62520 down,0.000142604,59.83435583,529.8593033,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,7,BEGAIN HCT116 knockdown GSE56788 down,0.000143467,59.70918367,528.3909514,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,8,GATA2 Ch-CRPC (22Rv1-DR culture (AR-)) Knockdown GSE58966 down,0.000144332,59.58452138,526.9293559,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,9,Tunicamycin 129S1Sv-ImJ mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000144332,59.58452138,526.9293559,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,10,Tunicamycin AJ mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000144332,59.58452138,526.9293559,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,11,Tunicamycin C57BL-6J mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000144332,59.58452138,526.9293559,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,12,Tunicamycin CAST-EiJ mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000144332,59.58452138,526.9293559,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,13,Blinc1 Pancreas Knockout GSE73711 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,14,CDK12 HCT116 knockdown GSE58107 up,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,15,Cyclophosphamide B16F10 tumors in C57BL-6 mice GSE71491 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,16,Estradiol G1E-ER-GATA-1 cells 1 uM 48 hrs GSE74371 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,17,HER2 BT-474 knockdown GSE60182 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,18,HER2 BT474 knockdown GSE60182 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,19,NIPBL Mouse embryonic fibroblasts Mutant GSE64706 up,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,20,PKC412 MDAMB468 1uM-6hrs GSE63721 up,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,21,RGS18 HCT116 knockdown GSE56788 up,0.000145201,59.46036585,525.4744727,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,22,Tunicamycin PWK-PhJ mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,23,Tunicamycin WSB-EiJ mice - primary Mouse Embryonic Fibroblasts GSE63756 up,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,24,beta-catenin Skin Mutation (Deletion) GSE75944 down,0.000145201,59.46036585,525.4744727,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,25,BRD9-inhibitor HeLa GSE79284 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,26,CCNK HCT116 knockdown GSE56788 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,27,Dexamethasone Embryonic hypothalamic progenitor-stem cells - Female 100 nM 4 hrs GSE55113 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,28,EHF A549 Overexpression GSE63397 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,29,Ezh2 mESC tamoxifen induced Knockout GSE66814 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,30,LKB1 HuH-28 knockdown GSE59855 down,0.000146074,59.336714,524.0262578,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,31,MEF2 Skeletal muscle (C2C12 Myoblast) Silencing GSE61205 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,32,MOV10 HEK293F knockdown GSE50499 down,0.000146074,59.336714,524.0262578,"['MOV10', 'CNBP', 'HDLBP']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,33,Parathyroid hormone Osteocyte 50 nM GSE61351 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,34,Pcbp2 Fetal liver knockout GSE72491 up,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,35,Prmt5 Mouse Embryonic Fibroblasts knockout GSE45284 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,36,Retinoic Acid Embryonic Stem Cells 2 uM 4 days GSE71802 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,37,TGFB3 Palatal shelves E16.5 GSE45568 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,38,miR-92a-1 Whole embryo Knockout GSE63813 down,0.000146074,59.336714,524.0262578,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,39,4-hydroxytamoxifen Embrionic stem cells 0.1 uM 0 hrs GSE84953 down,0.000146949,59.21356275,522.5846677,"['MOV10', 'CNBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,40,5-Azacytidine JJN3 24hr-10nM GSE56623 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,41,5-Azacytidine U266 24hr-10nM GSE56623 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,42,DRB (dichlorobenzimidazole 1-??-D-ribofuranoside) Foresking Fibroblasts (HF1) 60min GSE55534 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,43,FFAR3 Pancreatic islets knockout GSE67991 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,44,IPTKB Hematopoietic stem cell Knockout GSE56613 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,45,KH-CB19 Embryonic stem cells 2 hrs GSE57231 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,46,Lsd1 Oocyte knockout GSE73803 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'IGF2BP2']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,47,Mef2c Heart conditional Knockout GSE68147 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,48,Mycobacterium tuberculosis (MTB) H37Rv Macrophage 4hr GSE67427 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,49,Nfib Primary lung tumor-derived cells Overexpression GSE82005 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,50,PNN  HCET knockdown GSE73060 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,51,Polycystic Liver Disease Biliary Stem Cell GSE73579 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,52,Prox1 Lens knockout GSE69940 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,53,RBM38 NA knockdown GSE87710 up,0.000146949,59.21356275,522.5846677,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,54,RNPK1 A673 knockdown GSE60890 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,55,SGC0946 MV4-11 GSE71777 down,0.000146949,59.21356275,522.5846677,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,56,Salmonella typhimurium Macrophage 4hr GSE67427 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,57,Staphylococcus epidermidis Macrophage 4hr GSE67427 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,58,TGM5 HCT116 knockdown GSE56788 down,0.000146949,59.21356275,522.5846677,"['MOV10', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,59,Yersinia pseudotuberculosis Macrophage 4hr GSE67427 down,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,60,miR-18a Heart Knockout GSE63813 up,0.000146949,59.21356275,522.5846677,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,61,4-hydroxytamoxifen Embrionic stem cells 0.1 uM 4 hrs GSE84953 down,0.000147829,59.09090909,521.1496591,"['MOV10', 'CNBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,62,All-trans retinoic acid Embryonal carcinoma cell line 48 hrs GSE56893 down,0.000147829,59.09090909,521.1496591,"['MOV10', 'CNBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,63,BRG1 501 Melanocytes knockdown GSE61966 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,64,Baf60c Cardiac precursor stage (D5.3) knockout GSE59383 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,65,Ch25h BMDM Knockout GSE58993 down,0.000147829,59.09090909,521.1496591,"['MOV10', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,66,Colorectal Cancer Colon (Whole tissue) GSE74369 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,67,Dicer1 Non-small cell lung cancer cells Knockout GSE57043 up,0.000147829,59.09090909,521.1496591,"['MOV10', 'HDLBP', 'IGF2BP2']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,68,Dlx3 Femur diaphysis knockout GSE53105 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,69,Doxycycline T-ALL cells 600 mg-kg 3 days GSE54447 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,70,Ezh2 Small intestinal crypts Knockout GSE81576 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,71,FICZ Skin Biopsy (Lesion) 16hrs GSE47944 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,72,Ginkgolic Acid MCF10A 30uM-72hrs GSE61727 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,73,Ginkgolic Acid NOTCH1 30uM-72hrs GSE61727 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,74,HnRNP U Heart ventricle knockout GSE68178 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,75,Kap1 Skeletal muscle Knockdown GSE62659 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,76,Meis1-Jmjd1c1 Hoxa9 - Bone marrow cells GSE75581 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,77,POLR2D HCT116 knockdown GSE56788 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,78,RBM47 H358 knockdown GSE75491 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,79,Rb1 Lung knockout GSE71924 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,80,Retinoic Acid Testis (Mouse Spermatocytes) 100 nM GSE77051 down,0.000147829,59.09090909,521.1496591,"['MOV10', 'CNBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,81,SGC0946 & I-BET MV4-11 (Nascent RNA) GSE81147 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'IGF2BP2']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,82,SGC0946 MV4-11 (Nascent RNA) GSE81147 down,0.000147829,59.09090909,521.1496591,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,83,SRA MCF7 knockdown GSE52385 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,84,Setdb1 C2C12 myoblast cell line knockdown GSE70069 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,85,Setdb1 Skeletal muscle (C2C12 cells) Knockdown GSE70069 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,86,U2AF1(S34F) Bone marrow Mutant GSE66793 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,87,Vemurafenib Colo800 48hr-0.1uM GSE64741 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,88,Vemurafenib UACC62 48hr-0.1uM GSE64741 down,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,89,ZNA MCF7 30uM-12hrs GSE59251 up,0.000147829,59.09090909,521.1496591,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,90,CFTR Duodenum Knockout GSE76095 down,0.000148712,58.96875,519.7211894,"['MOV10', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,91,Ctcfl Transgenic GSE72178 up,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,92,Gprc5a colorectal cancer tissues Knockout GSE86895 up,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,93,Hif1a Heart conditional Knockout GSE61209 up,0.000148712,58.96875,519.7211894,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,94,ILK (Epidermis) Hair follicle bulge stem cell Knockout 21 day old epidermis GSE68846 up,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,95,Jmjd1c Bone marrow cells GSE75579 up,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,96,Lin28 Neural stem cells Overexpression GSE77851 up,0.000148712,58.96875,519.7211894,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,97,Msi2 Leukemia stem cells (LSCs) Knockout GSE64545 down,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,98,STC1 Embryonic fibroblasts Knockout GSE47395 up,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,99,Tex10 Embryonic Stem cells Knockdown GSE66734 down,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,100,miR-18a Whole embryo Knockout GSE63813 down,0.000148712,58.96875,519.7211894,"['CNBP', 'HDLBP', 'PABPC1']",0.001222409,0,0
+BioPlex_2017,3,RPL6,3.50E-05,369.6111111,3792.02091,"['MOV10', 'CNBP']",0.001237501,0,0
+Pfam_InterPro_Domains,2,RRM RNP1,0.000881012,70.23758865,494.0820897,"['IGF2BP2', 'PABPC1']",0.001321517,0,0
+MSigDB_Hallmark_2020,1,Pperoxisome,0.000265083,130.0196078,1070.772216,"['CNBP', 'PABPC1']",0.001325415,0,0
+Genome_Browser_PWMs,1,V$AP2 Q3,2.03E-05,117.0474308,1264.471724,"['MOV10', 'HDLBP', 'PABPC1']",0.001504934,0,0
+Pfam_Domains_2019,2,RRM 1,0.001034402,64.67647059,444.5816468,"['IGF2BP2', 'PABPC1']",0.001551603,0,0
+Ligand_Perturbations_from_GEO_down,1,testosterone mouse submandibular glands from BALB/c females GDS1833 ligand:53,3.08E-05,101.5670103,1055.201401,"['CNBP', 'HDLBP', 'PABPC1']",0.00166009,0,0
+Ligand_Perturbations_from_GEO_down,2,growth hormone mouse 3T3-F442A adipocytes GDS1489 ligand:11,5.36E-05,83.94871795,825.6247752,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.00166009,0,0
+TF_Perturbations_Followed_by_Expression,2,SRF KD MOUSE GSE1948 CREEDSID GENE 1156 UP,8.45E-06,158.0345745,1845.985665,"['MOV10', 'IGF2BP2', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,3,NEUROG3 OE MOUSE GSE3653 CREEDSID GENE 2290 DOWN,1.06E-05,146.2463054,1675.114882,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,4,NR4A2 OE MOUSE GSE3571 CREEDSID GENE 3121 UP,2.11E-05,115.6582031,1245.431748,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,5,NR4A2 OE MOUSE GSE3571 CREEDSID GENE 1290 DOWN,2.13E-05,115.2023346,1239.194581,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,6,MBNL1 SHRNA MDAMB231 HUMAN GSE76487 RNASEQ UP,2.23E-05,113.4137931,1214.775521,"['CNBP', 'HDLBP', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,7,SRF MUT MOUSE GSE1948 CREEDSID GENE 1395 UP,2.36E-05,111.2537594,1185.395677,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001671616,0,0
+TF_Perturbations_Followed_by_Expression,8,IKZF1 MUT HUMAN GSE2501 CREEDSID GENE 2259 UP,2.36E-05,111.2537594,1185.395677,"['CNBP', 'HDLBP', 'PABPC1']",0.001671616,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,1,LARP1,3.24E-05,99.82601351,1032.084123,"['CNBP', 'HDLBP', 'PABPC1']",0.001727606,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,2,CSDE1,3.24E-05,99.82601351,1032.084123,"['CNBP', 'HDLBP', 'PABPC1']",0.001727606,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,3,CUL4A,3.24E-05,99.82601351,1032.084123,"['CNBP', 'HDLBP', 'PABPC1']",0.001727606,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,4,ZC3H14,3.24E-05,99.82601351,1032.084123,"['CNBP', 'HDLBP', 'PABPC1']",0.001727606,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,5,ZFR,3.24E-05,99.82601351,1032.084123,"['CNBP', 'HDLBP', 'PABPC1']",0.001727606,0,0
+Ligand_Perturbations_from_GEO_up,1,17beta-estradiol mouse uterus GSE6931 ligand:86,4.11E-05,91.93457944,928.4514245,"['CNBP', 'HDLBP', 'PABPC1']",0.001748926,0,0
+Ligand_Perturbations_from_GEO_up,2,fibroblast growth factor 2 (FGF2) human embryonic fibroblast GDS2422 ligand:9,4.54E-05,88.83885542,888.3362962,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001748926,0,0
+TF_Perturbations_Followed_by_Expression,9,YBX1 SIRNA BT549 HUMAN GSE79586 RNASEQ UP,3.11E-05,101.2140411,1050.507424,"['MOV10', 'CNBP', 'PABPC1']",0.001816101,0,0
+TF_Perturbations_Followed_by_Expression,10,AIRE KO MOUSE GSE2585 CREEDSID GENE 272 UP,3.20E-05,100.1694915,1036.637822,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.001816101,0,0
+Aging_Perturbations_from_GEO_down,1,Mouse retina 2 days vs 10 days GDS2936 aging:252,3.33E-05,98.80936455,1018.626327,"['CNBP', 'IGF2BP2', 'PABPC1']",0.001833236,0,0
+InterPro_Domains_2019,3,RNA recognition motif domain,0.001210554,59.65007541,400.6502935,"['IGF2BP2', 'PABPC1']",0.00187421,0,0
+InterPro_Domains_2019,4,Polyadenylate-binding protein/Hyperplastic disc protein,0.001249473,1249.4375,8352.531058,['PABPC1'],0.00187421,0,0
+SubCell_BarCode,1,H322 Nuclear N1 30609389,0.000282951,47.1102107,384.9015551,"['MOV10', 'IGF2BP2', 'PABPC1']",0.00190618,0,0
+SubCell_BarCode,2,HCC827 Nuclear N1 30609389,0.00034497,43.94318182,350.3173659,"['MOV10', 'IGF2BP2', 'PABPC1']",0.00190618,0,0
+SubCell_BarCode,3,U251 Nuclear N1 30609389,0.000357409,43.3989521,344.4414413,"['MOV10', 'IGF2BP2', 'PABPC1']",0.00190618,0,0
+SubCell_BarCode,4,MCF7 Nuclear N1 30609389,0.000516053,38.12021136,288.5433754,"['MOV10', 'IGF2BP2', 'PABPC1']",0.002064211,0,0
+BioPlex_2017,4,GLTSCR2,0.000126909,189.7619048,1702.551352,"['MOV10', 'CNBP']",0.002433432,0,0
+BioPlex_2017,5,HIST1H1A,0.000126909,189.7619048,1702.551352,"['MOV10', 'CNBP']",0.002433432,0,0
+BioPlex_2017,6,TRA2A,0.000137741,181.9360731,1617.435782,"['MOV10', 'PABPC1']",0.002433432,0,0
+MSigDB_Hallmark_2020,2,Myc Targets V1,0.000975468,66.65656566,462.1028414,"['CNBP', 'PABPC1']",0.00243867,0,0
+CORUM,1,Vigilin-DNA-PK-Ku antigen complex (human),0.000999677,1666,11508.8581,['HDLBP'],0.0024987,0,0
+CORUM,2,"TRBP containing complex (DICER, TRBP, AGO2, RPL7A, EIF6, MOV10) (human)",0.00149922,999.5,6499.55902,['MOV10'],0.0024987,0,0
+CORUM,3,DHX9-ADAR-vigilin-DNA-PK-Ku antigen complex (human),0.00149922,999.5,6499.55902,['HDLBP'],0.0024987,0,0
+Enrichr_Users_Contributed_Lists_2020,1,nuclues and cytoplasm,1.92E-05,119.4375,1297.342293,"['MOV10', 'HDLBP', 'IGF2BP2']",0.002502531,0,0
+Enrichr_Users_Contributed_Lists_2020,2,Overexpression-293T,2.31E-05,112.1079545,1196.99939,"['MOV10', 'HDLBP', 'IGF2BP2']",0.002502531,0,0
+TF_Perturbations_Followed_by_Expression,11,KLF10 SIRNA PANC1 HUMAN GSE90566 RNASEQ UP,5.00E-05,85.94169096,851.0835755,"['CNBP', 'HDLBP', 'IGF2BP2']",0.002578439,0,0
+Transcription_Factor_PPIs,1,UPF1,0.00023538,138.1875,1154.460936,"['HDLBP', 'PABPC1']",0.002589183,0,0
+Gene_Perturbations_from_GEO_up,1,Srf KD mouse GSE1948 sample 1156,1.12E-05,143.3913043,1634.143829,"['MOV10', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,2,TERC KO mouse GSE2498 sample 996,1.17E-05,141.3214286,1604.544241,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,3,Nr4a2 OE mouse GSE3571 sample 3121,2.72E-05,106,1114.458645,"['CNBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,4,Srf homozygous Srf mutant (non-binding Srf treatment) mouse GSE1948 sample 1395,3.14E-05,100.8634812,1045.849093,"['CNBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,5,IKZF1 IkL/L Mutation human GSE2501 sample 2259,3.43E-05,97.81291391,1005.465948,"['CNBP', 'HDLBP', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,6,Trp53 KO mouse GSE40545 sample 1829,3.71E-05,95.25,971.7556833,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,7,Aire KO mouse GSE2585 sample 272,3.93E-05,93.41297468,947.7184341,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,8,Abca1 Heterozygotic knockout (Abca1 +/-) mouse GSE614 sample 1360,4.04E-05,92.52037618,936.0773894,"['MOV10', 'HDLBP', 'PABPC1']",0.002686215,0,0
+Gene_Perturbations_from_GEO_up,9,Aldh5a1 KO mouse GSE2866 sample 1207,4.23E-05,91.06944444,917.2092486,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.002686215,0,0
+BioPlex_2017,7,ZC3HAV1,0.000181222,158.0238095,1361.499503,"['MOV10', 'CNBP']",0.002744221,0,0
+Gene_Perturbations_from_GEO_up,10,Dmd Deficiency mouse GSE1025 sample 922,4.92E-05,86.45454545,857.6572189,"['CNBP', 'IGF2BP2', 'PABPC1']",0.002812247,0,0
+PPI_Hub_Proteins,2,GABARAP,0.000131705,61.50945378,549.5835924,"['MOV10', 'IGF2BP2', 'PABPC1']",0.002897513,0,0
+Gene_Perturbations_from_GEO_up,11,NPM1 mutated npm human GSE34860 sample 1737,6.26E-05,79.56081081,770.0718231,"['CNBP', 'IGF2BP2', 'PABPC1']",0.003254259,0,0
+Microbe_Perturbations_from_GEO_up,2,Yersinia enterocolitica mouse Peyer's patch GDS2100 microbe:87,0.0001094,65.59731544,598.2802989,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.003282,0,0
+GO_Molecular_Function_2018,3,mRNA binding (GO:0003729),0.000782562,74.6440678,533.9243253,"['IGF2BP2', 'PABPC1']",0.003391103,0,0
+Transcription_Factor_PPIs,2,NANOG,0.000626024,83.70042194,617.3845045,"['MOV10', 'PABPC1']",0.003443132,0,0
+TF_Perturbations_Followed_by_Expression,12,EHF KD CALU3 HUMAN GSE63397 RNASEQ UP,7.31E-05,75.40384615,718.1046648,"['CNBP', 'IGF2BP2', 'PABPC1']",0.003454781,0,0
+Drug_Perturbations_from_GEO_down,1,valproic acid DB00313 mouse GSE9247 sample 2838,2.55E-05,108.3626374,1146.26629,"['CNBP', 'HDLBP', 'PABPC1']",0.003483148,0,0
+Drug_Perturbations_from_GEO_down,2,5-Fluorouracil 3385 mouse GSE1559 sample 3635,3.33E-05,98.80936455,1018.626327,"['CNBP', 'HDLBP', 'PABPC1']",0.003483148,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,101,Eed Small intestinal crypts Knockout GSE81576 up,0.000462016,39.64197531,304.4468471,"['CNBP', 'HDLBP', 'PABPC1']",0.003760169,0,0
+Drug_Perturbations_from_GEO_down,3,apratoxin A 6326668 human GSE2742 sample 3067,5.40E-05,83.70596591,822.5333107,"['CNBP', 'HDLBP', 'PABPC1']",0.003762251,0,0
+BioPlex_2017,8,RRS1,0.000285855,125.0880503,1020.721936,"['MOV10', 'CNBP']",0.003787572,0,0
+TF_Perturbations_Followed_by_Expression,13,ATF4 KO HEK293 HUMAN GSE97384 RNASEQ DOWN,9.10E-05,69.91071429,650.4841157,"['CNBP', 'HDLBP', 'PABPC1']",0.003969607,0,0
+Gene_Perturbations_from_GEO_down,1,Neurog3 Conditional expression (induced with doxycycline) mouse GSE3653 sample 2290,1.72E-05,123.9916318,1360.363682,"['CNBP', 'IGF2BP2', 'PABPC1']",0.004052403,0,0
+Gene_Perturbations_from_GEO_down,2,TBK1 knockdown human GSE17643 sample 1890,2.41E-05,110.4123134,1173.984104,"['CNBP', 'IGF2BP2', 'PABPC1']",0.004052403,0,0
+Gene_Perturbations_from_GEO_down,3,Nr4a2 OE mouse GSE3571 sample 1290,2.74E-05,105.6160714,1109.30452,"['CNBP', 'IGF2BP2', 'PABPC1']",0.004052403,0,0
+Gene_Perturbations_from_GEO_down,4,Dmd Deficiency mouse GSE897 sample 909,3.64E-05,95.87824675,980.0003934,"['CNBP', 'HDLBP', 'PABPC1']",0.004052403,0,0
+Gene_Perturbations_from_GEO_down,5,Dmd Deficiency mouse GSE1472 sample 1641,3.78E-05,94.62980769,963.6287098,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.004052403,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,102,Albuterol Airway (Smooth muscle) GSE58434 up,0.000510076,38.27785146,290.182544,"['CNBP', 'HDLBP', 'PABPC1']",0.004110609,0,0
+GO_Cellular_Component_2018,1,cytoplasmic ribonucleoprotein granule (GO:0036464),0.000706275,78.67857143,570.8528494,"['MOV10', 'PABPC1']",0.004237649,0,0
+Gene_Perturbations_from_GEO_up,12,Dmd Deficiency mouse GSE1008 sample 1634,9.04E-05,70.08114558,652.5633628,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.004307889,0,0
+TF_Perturbations_Followed_by_Expression,14,PBX3 OE SMMC7721 HUMAN GSE71261 RNASEQ DOWN,0.000122923,63,567.2489364,"['MOV10', 'CNBP', 'HDLBP']",0.00458102,0,0
+TF_Perturbations_Followed_by_Expression,15,IRX6 SIRNA BT549 HUMAN GSE79586 RNASEQ UP,0.000123705,62.86158798,565.6040801,"['MOV10', 'CNBP', 'PABPC1']",0.00458102,0,0
+TF_Perturbations_Followed_by_Expression,16,JUN SIRNA PC3 HUMAN GSE53470 RNASEQ DOWN,0.00012927,61.90909091,554.3095,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.00458102,0,0
+Table_Mining_of_CRISPR_Studies,2,"Supplemental, PMC6879830 (Tablesupplemental)",0.002201177,22.76706827,139.306299,"['MOV10', 'CNBP', 'IGF2BP2', 'PABPC1']",0.004995416,0,0
+Table_Mining_of_CRISPR_Studies,3,"Silac plk exogenous interactome obtained, PMC4973331 (Table1)",0.002497708,555.1666667,3326.770642,['IGF2BP2'],0.004995416,0,0
+NIH_Funded_PIs_2017_Human_AutoRIF,1,Burns Kathleen H (Johns Hopkins University),7.12E-05,255.6794872,2441.818836,"['MOV10', 'PABPC1']",0.005216152,0,0
+NIH_Funded_PIs_2017_Human_AutoRIF,2,Boeke Jef D (New York University School Of Medicine),9.40E-05,221.5,2053.831797,"['MOV10', 'PABPC1']",0.005216152,0,0
+TF_Perturbations_Followed_by_Expression,17,JUNB KO MEL888 HUMAN GSE98867 RNASEQ DOWN,0.000166149,56.73786408,493.7682505,"['CNBP', 'HDLBP', 'IGF2BP2']",0.005354492,0,0
+TF_Perturbations_Followed_by_Expression,18,MITF KD H3A HUMAN GSE61966 RNASEQ UP,0.000169984,56.28901734,488.5778065,"['CNBP', 'HDLBP', 'PABPC1']",0.005354492,0,0
+Drug_Perturbations_from_GEO_down,4,5-Fluorouracil 3385 mouse GSE1559 sample 3640,0.000105121,66.51020408,609.2602335,"['CNBP', 'HDLBP', 'PABPC1']",0.005492551,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,103,Erlotinib 11-18 GSE65420 down,0.000692747,34.33333333,249.769687,"['CNBP', 'HDLBP', 'PABPC1']",0.005528527,0,0
+PPI_Hub_Proteins,3,MAPK13,0.000473023,96.63260341,739.8545889,"['IGF2BP2', 'PABPC1']",0.005582928,0,0
+PPI_Hub_Proteins,4,NPM1,0.000507539,93.20657277,707.0591984,"['CNBP', 'HDLBP']",0.005582928,0,0
+TF_Perturbations_Followed_by_Expression,19,NKX25 SHRNA H1 HUMAN GSE69618 DAY2 RNASEQ UP,0.000188993,54.24814126,465.112749,"['CNBP', 'HDLBP', 'PABPC1']",0.005639949,0,0
+Pfam_InterPro_Domains,3,Znf CCHC,0.005737289,226.9659091,1171.318505,['CNBP'],0.005737289,0,0
+BioCarta_2016,1,Regulation of eIF4e and p70 S6 Kinase Homo sapiens h eif4Pathway,0.005986139,217.0869565,1111.118048,['PABPC1'],0.006234939,0,0
+BioCarta_2016,2,Skeletal muscle hypertrophy is regulated via AKT/mTOR pathway Homo sapiens h igf1mtorpathway,0.006234939,208.03125,1056.296661,['PABPC1'],0.006234939,0,0
+PheWeb_2019,1,ASCVD,0.003744697,356.8035714,1993.609467,['IGF2BP2'],0.006234939,0,0
+PheWeb_2019,2,Cyst and pseudocyst of pancreas,0.003744697,356.8035714,1993.609467,['PABPC1'],0.006234939,0,0
+PheWeb_2019,3,Fracture of clavicle or scapula,0.004990441,262.8421053,1393.123889,['IGF2BP2'],0.006234939,0,0
+PheWeb_2019,4,Kidney replaced by transpant,0.005488389,237.7857143,1237.703279,['HDLBP'],0.006234939,0,0
+PheWeb_2019,5,Splenomegaly,0.006234939,208.03125,1056.296661,['MOV10'],0.006234939,0,0
+Disease_Perturbations_from_GEO_down,1,Duchenne muscular dystrophy (DMD) C0013264 mouse GSE1472 sample 62,3.78E-05,94.62980769,963.6287098,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.006426386,0,0
+Human_Phenotype_Ontology,1,Posterior subcapsular cataract (HP:0007787),0.001998563,713.8571429,4436.855318,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,2,Gonadotropin excess (HP:0000837),0.002248161,624.59375,3808.549663,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,3,IgM deficiency (HP:0002850),0.002497708,555.1666667,3326.770642,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,4,Type 2 muscle fiber atrophy (HP:0003554),0.002497708,555.1666667,3326.770642,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,5,Muscle fiber atrophy (HP:0100295),0.002747205,499.625,2946.37412,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,6,Subcapsular cataract (HP:0000523),0.003246051,416.3125,2385.602237,['CNBP'],0.006492102,0,0
+Human_Phenotype_Ontology,7,Myotonia (HP:0002486),0.003246051,416.3125,2385.602237,['CNBP'],0.006492102,0,0
+PPI_Hub_Proteins,5,EIF2C1,0.000739706,76.83333333,553.9113025,"['MOV10', 'PABPC1']",0.006509413,0,0
+Genes_Associated_with_NIH_Grants,3,R01AI083294,0.000749831,2499.125,17982.859,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,4,R21AI078839,0.000749831,2499.125,17982.859,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,5,T01GM001262,0.000749831,2499.125,17982.859,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,6,F32CA074494,0.000749831,2499.125,17982.859,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,7,F32GM083430,0.000749831,2499.125,17982.859,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,8,R01GM073863,0.000749831,2499.125,17982.859,['CNBP'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,9,R01ES011993,0.000999677,1666,11508.8581,['CNBP'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,10,R01AI073898,0.000999677,1666,11508.8581,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,11,R01AI078812,0.000999677,1666,11508.8581,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,12,R01AI071068,0.000999677,1666,11508.8581,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,13,R01DK060720,0.000999677,1666,11508.8581,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,14,R01AI050237,0.000999677,1666,11508.8581,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,15,R01DK071895,0.000999677,1666,11508.8581,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,16,R01AR048171,0.001249473,1249.4375,8352.531058,['CNBP'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,17,K08AG039510,0.001249473,1249.4375,8352.531058,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,18,R01GM036481,0.001249473,1249.4375,8352.531058,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,19,K01DK082613,0.001249473,1249.4375,8352.531058,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,20,R01GM061262,0.001249473,1249.4375,8352.531058,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,21,R01DK065598,0.001249473,1249.4375,8352.531058,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,22,ZIABC010506,0.001249473,1249.4375,8352.531058,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,23,R01GM056927,0.00149922,999.5,6499.55902,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,24,U01HL084715,0.00149922,999.5,6499.55902,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,25,R01DK051611,0.00149922,999.5,6499.55902,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,26,R01CA138265,0.00149922,999.5,6499.55902,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,27,R01DK044350,0.00149922,999.5,6499.55902,['CNBP'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,28,T32AI007245,0.00149922,999.5,6499.55902,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,29,R01DK061628,0.00149922,999.5,6499.55902,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,30,R01AI063944,0.001748917,832.875,5287.7225,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,31,K02AI080225,0.001748917,832.875,5287.7225,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,32,R01NS073660,0.001748917,832.875,5287.7225,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,33,R01GM084364,0.001748917,832.875,5287.7225,['IGF2BP2'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,34,R01GM059211,0.001748917,832.875,5287.7225,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,35,R01GM060428,0.001748917,832.875,5287.7225,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,36,R01DK071909,0.001998563,713.8571429,4436.855318,['HDLBP'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,37,R01DK078424,0.001998563,713.8571429,4436.855318,['MOV10'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,38,ZIAHD000412,0.001998563,713.8571429,4436.855318,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,39,R01AI020530,0.001998563,713.8571429,4436.855318,['PABPC1'],0.006595259,0,0
+Genes_Associated_with_NIH_Grants,40,R01GM068476,0.001998563,713.8571429,4436.855318,['MOV10'],0.006595259,0,0
+Human_Phenotype_Ontology,8,Palpitations (HP:0001962),0.003993945,333,1839.150909,['CNBP'],0.006600446,0,0
+Human_Phenotype_Ontology,9,Abnormal spermatogenesis (HP:0008669),0.004243144,312.171875,1705.223501,['CNBP'],0.006600446,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,104,Id3 Spleen B cells Knockout GSE72831 up,0.000845545,31.97377232,226.2313686,"['CNBP', 'HDLBP', 'PABPC1']",0.006683056,0,0
+MGI_Mammalian_Phenotype_2017,1,MP:0004388 absent prechordal plate,0.000749831,2499.125,17982.859,['CNBP'],0.006744482,0,0
+MGI_Mammalian_Phenotype_2017,2,MP:0012517 absent diencephalon,0.000999677,1666,11508.8581,['CNBP'],0.006744482,0,0
+MGI_Mammalian_Phenotype_2017,3,MP:0012706 decreased embryonic neuroepithelial cell proliferation,0.001748917,832.875,5287.7225,['CNBP'],0.006744482,0,0
+MGI_Mammalian_Phenotype_2017,4,MP:0011259 abnormal cephalic neural fold morphology,0.001998563,713.8571429,4436.855318,['CNBP'],0.006744482,0,0
+MGI_Mammalian_Phenotype_2017,5,MP:0011257 abnormal head fold morphology,0.002248161,624.59375,3808.549663,['CNBP'],0.006744482,0,0
+MGI_Mammalian_Phenotype_2017,6,MP:0008533 abnormal anterior visceral endoderm morphology,0.002747205,499.625,2946.37412,['CNBP'],0.006868013,0,0
+ClinVar_2019,1,diabetes mellitus type 2,0.006981041,184.8888889,917.8914803,['IGF2BP2'],0.006981041,0,0
+Pfam_Domains_2019,3,zf-CCHC,0.006981041,184.8888889,917.8914803,['CNBP'],0.006981041,0,0
+Genes_Associated_with_NIH_Grants,41,R01GM066816,0.002248161,624.59375,3808.549663,['HDLBP'],0.007065647,0,0
+Genes_Associated_with_NIH_Grants,42,R01CA056956,0.002248161,624.59375,3808.549663,['IGF2BP2'],0.007065647,0,0
+RNA-Seq_Disease_Gene_and_Drug_Signatures_from_GEO,105,Doxycycline Embryonic stem cells 2 ug-ml GSE72178 up,0.000919282,31.02982646,216.9579744,"['HDLBP', 'IGF2BP2', 'PABPC1']",0.007196669,0,0
+Genes_Associated_with_NIH_Grants,43,ZIASC010357,0.002497708,555.1666667,3326.770642,['PABPC1'],0.00732661,0,0
+Genes_Associated_with_NIH_Grants,44,R01GM066157,0.002497708,555.1666667,3326.770642,['PABPC1'],0.00732661,0,0
+Genes_Associated_with_NIH_Grants,45,S10RR017970,0.002497708,555.1666667,3326.770642,['PABPC1'],0.00732661,0,0
+GWAS_Catalog_2019,1,Hip circumference adjusted for BMI,0.000240209,136.7560137,1139.724512,"['MOV10', 'IGF2BP2']",0.007446494,0,0
+Aging_Perturbations_from_GEO_up,1,Mouse spinal cord 9 months vs 12 months GDS967 aging:331,0.000108679,65.74775785,600.0871884,"['CNBP', 'HDLBP', 'PABPC1']",0.007498846,0,0
+Human_Phenotype_Ontology,10,Polar cataract (HP:0010696),0.005488389,237.7857143,1237.703279,['CNBP'],0.007564304,0,0
+Human_Phenotype_Ontology,11,Neck muscle weakness (HP:0000467),0.005986139,217.0869565,1111.118048,['CNBP'],0.007564304,0,0
+Human_Phenotype_Ontology,12,IgG deficiency (HP:0004315),0.006483689,199.7,1006.181577,['CNBP'],0.007564304,0,0
+Genes_Associated_with_NIH_Grants,46,DP2OD004417,0.002747205,499.625,2946.37412,['PABPC1'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,47,R01NS065317,0.002747205,499.625,2946.37412,['PABPC1'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,48,R01CA120768,0.002996653,454.1818182,2638.914119,['PABPC1'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,49,R01CA042357,0.002996653,454.1818182,2638.914119,['PABPC1'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,50,R01GM064779,0.002996653,454.1818182,2638.914119,['CNBP'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,51,R01CA124756,0.002996653,454.1818182,2638.914119,['PABPC1'],0.007606888,0,0
+Genes_Associated_with_NIH_Grants,52,U01MH079639,0.002996653,454.1818182,2638.914119,['IGF2BP2'],0.007606888,0,0
+Virus-Host_PPI_P-HIPSTer_2020,1,Human papillomavirus type 56 envelope protein (gene: E7),6.85E-05,260.7058824,2499.635584,"['HDLBP', 'IGF2BP2']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,2,Human papillomavirus type 34 early protein (gene: E7),0.000134082,184.4722222,1644.950081,"['HDLBP', 'IGF2BP2']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,3,Human papillomavirus type 83 transactivator (gene: E2),0.000221184,142.6666667,1200.756071,"['HDLBP', 'PABPC1']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,4,Human papillomavirus type 106 E2 protein,0.000285855,125.0880503,1020.721936,"['IGF2BP2', 'PABPC1']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,5,Influenza A virus (A/goose/Guangdong/1/1996(H5N1)) hemagglutinin (gene: HA),0.00034117,114.2471264,912.0497333,"['HDLBP', 'IGF2BP2']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,6,Human papillomavirus type 102 E2 protein,0.000370638,109.4986226,865.0702941,"['HDLBP', 'PABPC1']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,7,Human papillomavirus type 81 E2 protein (gene: E2),0.00039508,105.9733333,830.4517537,"['HDLBP', 'PABPC1']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,8,Alphapapillomavirus 4 early protein E2 (gene: E2),0.000420292,102.6666667,798.1881628,"['HDLBP', 'PABPC1']",0.007611961,0,0
+Virus-Host_PPI_P-HIPSTer_2020,9,Human papillomavirus type 2 E2 protein (gene: E2),0.000420292,102.6666667,798.1881628,"['HDLBP', 'PABPC1']",0.007611961,0,0
+Enrichr_Users_Contributed_Lists_2020,3,a list of alternative splice,0.000106566,207.6145833,1898.997473,"['MOV10', 'PABPC1']",0.007708289,0,0
+InterPro_Domains_2019,5,"RNA recognition motif domain, eukaryote",0.006483689,199.7,1006.181577,['PABPC1'],0.007780427,0,0
+CORUM,4,"TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle) (human)",0.006234939,208.03125,1056.296661,['MOV10'],0.007793674,0,0
+Transcription_Factor_PPIs,3,ILF3,0.002133738,44.51977401,273.7912728,"['MOV10', 'PABPC1']",0.007823704,0,0
+Genes_Associated_with_NIH_Grants,53,R01GM073794,0.003246051,416.3125,2385.602237,['PABPC1'],0.007934791,0,0
+Genes_Associated_with_NIH_Grants,54,R01AI070072,0.003246051,416.3125,2385.602237,['MOV10'],0.007934791,0,0
+Genes_Associated_with_NIH_Grants,55,R37HL065449,0.003495399,384.2692308,2173.545039,['PABPC1'],0.008239155,0,0
+Genes_Associated_with_NIH_Grants,56,U54AI065359,0.003495399,384.2692308,2173.545039,['MOV10'],0.008239155,0,0
+Human_Phenotype_Ontology,13,Hyperpituitarism (HP:0010514),0.007726694,166.375,809.0939625,['CNBP'],0.008321055,0,0
+Virus-Host_PPI_P-HIPSTer_2020,10,Human papillomavirus type 114 E2 protein (gene: E2),0.000514586,92.55011655,700.803204,"['IGF2BP2', 'PABPC1']",0.008387748,0,0
+MGI_Mammalian_Phenotype_2017,7,MP:0012138 decreased forebrain size,0.003993945,333,1839.150909,['CNBP'],0.008423049,0,0
+MGI_Mammalian_Phenotype_2017,8,MP:0012157 rostral body truncation,0.004492293,293.7941176,1588.072397,['CNBP'],0.008423049,0,0
+Genes_Associated_with_NIH_Grants,57,Z01DK069000,0.003744697,356.8035714,1993.609467,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,58,R01AR032063,0.003993945,333,1839.150909,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,59,K23DK083551,0.003993945,333,1839.150909,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,60,R01GM077243,0.003993945,333,1839.150909,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,61,R37AR032063,0.003993945,333,1839.150909,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,62,R01HD037175,0.004243144,312.171875,1705.223501,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,63,K07CA143047,0.004243144,312.171875,1705.223501,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,64,R37MH035321,0.004243144,312.171875,1705.223501,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,65,R01MH035321,0.004243144,312.171875,1705.223501,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,66,R01GM059803,0.004243144,312.171875,1705.223501,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,67,K05DA000454,0.004492293,293.7941176,1588.072397,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,68,U01CA071966,0.004492293,293.7941176,1588.072397,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,69,ZIAAI000585,0.004492293,293.7941176,1588.072397,['PABPC1'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,70,R21DA018827,0.004492293,293.7941176,1588.072397,['IGF2BP2'],0.008471181,0,0
+Genes_Associated_with_NIH_Grants,71,ZICBC010915,0.004741392,277.4583333,1484.79735,['PABPC1'],0.008573475,0,0
+Genes_Associated_with_NIH_Grants,72,P01AG032953,0.004741392,277.4583333,1484.79735,['PABPC1'],0.008573475,0,0
+Genes_Associated_with_NIH_Grants,73,ZICES102488,0.004741392,277.4583333,1484.79735,['PABPC1'],0.008573475,0,0
+COVID-19_Related_Gene_Sets,2,Down Genes Mouse Lung from GSE19137:GPL1261:6,0.000565253,88.2,659.5804987,"['CNBP', 'PABPC1']",0.008761423,0,0
+miRTarBase_2017,1,hsa-miR-6861-3p,2.97E-05,403.2727273,4204.515497,"['CNBP', 'HDLBP']",0.008806607,0,0
+GO_Molecular_Function_2018,4,poly(A) binding (GO:0008143),0.003495399,384.2692308,2173.545039,['PABPC1'],0.008918633,0,0
+GO_Molecular_Function_2018,5,poly(U) RNA binding (GO:0008266),0.003993945,333,1839.150909,['PABPC1'],0.008918633,0,0
+GO_Molecular_Function_2018,6,poly-purine tract binding (GO:0070717),0.004990441,262.8421053,1393.123889,['PABPC1'],0.008918633,0,0
+GO_Molecular_Function_2018,7,poly-pyrimidine tract binding (GO:0008187),0.004990441,262.8421053,1393.123889,['PABPC1'],0.008918633,0,0
+GO_Molecular_Function_2018,8,mRNA 5'-UTR binding (GO:0048027),0.005488389,237.7857143,1237.703279,['IGF2BP2'],0.008918633,0,0
+Genes_Associated_with_NIH_Grants,74,R01GM062890,0.00523944,249.6875,1311.244059,['PABPC1'],0.008981897,0,0
+Genes_Associated_with_NIH_Grants,75,T32AI007647,0.00523944,249.6875,1311.244059,['PABPC1'],0.008981897,0,0
+Genes_Associated_with_NIH_Grants,76,T32AI007180,0.00523944,249.6875,1311.244059,['PABPC1'],0.008981897,0,0
+Genes_Associated_with_NIH_Grants,77,R01GM046454,0.00523944,249.6875,1311.244059,['PABPC1'],0.008981897,0,0
+InterPro_Domains_2019,6,"Zinc finger, CCHC-type",0.009216659,138.6041667,649.6020692,['CNBP'],0.009216659,0,0
+Genes_Associated_with_NIH_Grants,78,M01RR000058,0.005488389,237.7857143,1237.703279,['IGF2BP2'],0.009288044,0,0
+Genes_Associated_with_NIH_Grants,79,ZIAHD008888,0.005737289,226.9659091,1171.318505,['IGF2BP2'],0.009349656,0,0
+Genes_Associated_with_NIH_Grants,80,P01HL068744,0.005737289,226.9659091,1171.318505,['CNBP'],0.009349656,0,0
+Genes_Associated_with_NIH_Grants,81,T32CA009385,0.005737289,226.9659091,1171.318505,['CNBP'],0.009349656,0,0
+Genes_Associated_with_NIH_Grants,82,R37DK042394,0.005986139,217.0869565,1111.118048,['PABPC1'],0.00940679,0,0
+Genes_Associated_with_NIH_Grants,83,D43TW009107,0.005986139,217.0869565,1111.118048,['MOV10'],0.00940679,0,0
+Genes_Associated_with_NIH_Grants,84,ZIABC010504,0.005986139,217.0869565,1111.118048,['MOV10'],0.00940679,0,0
+Genes_Associated_with_NIH_Grants,85,ZIABC010595,0.006483689,199.7,1006.181577,['MOV10'],0.009837322,0,0
+Genes_Associated_with_NIH_Grants,86,P01CA072765,0.006483689,199.7,1006.181577,['PABPC1'],0.009837322,0,0
+Genes_Associated_with_NIH_Grants,87,R01DK082766,0.006483689,199.7,1006.181577,['IGF2BP2'],0.009837322,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,6,ADAR,0.002162185,44.21548822,271.3343604,"['MOV10', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,7,LARP4,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,8,THAP4,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,9,MATR3,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,10,ATF1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,11,ATF4,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,12,MBNL1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,13,TOX4,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,14,BCLAF1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,15,MKRN2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,16,U2AF1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,17,UBE2K,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,18,UBR4,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,19,ZNF706,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,20,CBFB,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,21,YBX1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,22,CEBPZ,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,23,YY1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,24,CHRAC1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,25,COPS2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,26,COPS3,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,27,COPS4,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,28,ZC3H11A,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,29,DEK,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,30,ZC3H15,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,31,ZC3H18,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,32,DHX57,0.002162185,44.21548822,271.3343604,"['MOV10', 'IGF2BP2']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,33,ZC3HAV1,0.002162185,44.21548822,271.3343604,"['MOV10', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,34,DNAJC2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,35,DNAJC21,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,36,DPF2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,37,DR1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,38,ZFP91,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,39,EDF1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,40,ZMAT2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,41,EIF3K,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,42,PHB2,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,43,ZNF146,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,44,EWSR1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,45,ZNF207,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,46,PREB,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,47,PSMD12,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,48,RBM10,0.002162185,44.21548822,271.3343604,"['HDLBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,49,RBM22,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,50,RNF114,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,51,GTF3A,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,52,HMGB1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,53,HP1BP3,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,54,SSB,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,55,TAX1BP1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,56,KCMF1,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,57,TCF25,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+Enrichr_Submissions_TF-Gene_Coocurrence,58,TFAM,0.002162185,44.21548822,271.3343604,"['CNBP', 'PABPC1']",0.009953506,0,0
+MGI_Mammalian_Phenotype_2017,9,MP:0000460 mandible hypoplasia,0.005986139,217.0869565,1111.118048,['CNBP'],0.009976898,0,0
+TRRUST_Transcription_Factors_2019,1,HMGA2 mouse,0.001998563,713.8571429,4436.855318,['IGF2BP2'],0.009992817,0,0
