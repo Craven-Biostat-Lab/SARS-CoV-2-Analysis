@@ -1,0 +1,50 @@
+symbol_id,drug_name,approved,approval_source
+RCE1,compound 3 [PMID: 17942791],False,-
+RCE1,CID16197121,False,-
+PARP1,AG14361,False,-
+PARP1,rucaparib,True,"FDA (2016), EMA (2018)"
+PARP1,olaparib,True,EMA & FDA (2014)
+PARP1,niraparib,True,EMA & FDA (2017)
+PARP1,ME0328,False,-
+PARP1,compound 10b [PMID: 26222319],False,-
+PARP1,talazoparib,True,"FDA (2018), EMA (2019)"
+PARP1,MC2050,False,-
+PARP1,MC2050,False,-
+PARP1,"compound 5 [Tomassi <i>et al</i>., 2020]",False,-
+PARP1,AZ1366,False,-
+PARP1,example 26 [WO2015037939A1],False,-
+ABCC1,WP814,False,-
+ABCC1,compound 14 [PMID: 30925062],False,-
+M,compound 8a [PMID: 23713581],False,-
+RRM2,clofarabine,True,"FDA (2004), EMA (2009)"
+RRM2,fludarabine,True,FDA (1991)
+RRM2,gemcitabine,True,FDA (1996)
+RRM2,hydroxyurea,True,"FDA (1967), EMA (2007)"
+PTK2,compound 30 [PMID: 23414845],False,-
+PTK2,ENMD-2076,False,-
+PTK2,VS-4718,False,-
+PTK2,PF-562271,False,-
+PTK2,NVP-TAE 226,False,-
+PTK2,CEP-37440,False,-
+PTK2,conteltinib,False,-
+nsp12,remdesivir,True,FDA (2020)
+nsp12,remdesivir,True,FDA (2020)
+PIP5K1A,ISA-2011B,False,-
+IDH2,enasidenib,True,FDA (2017)
+IDH2,vorasidenib,False,-
+GART,pemetrexed,True,"FDA (2004), EMA (2009)"
+RAC1,GSK690693,False,-
+RAC1,PF-3758309,False,-
+RAC1,compound 4 [PMID: 24432870],False,-
+MALT1,pecazine,True,
+N,compound 2e [PMID: 19013076],False,-
+DHFR,pemetrexed,True,"FDA (2004), EMA (2009)"
+DHFR,pralatrexate,True,FDA (2009)
+DHFR,trimetrexate,True,FDA (1993)
+DHFR,compound 9 [PMID: 15615544],False,-
+DHFR,iclaprim,False,-
+DHFR,diflunisal,True,FDA (1982)
+DHFR,methotrexate,True,"FDA (1953), EMA (2016)"
+SF1,RJW100,False,-
+RAD51,leucettine L41,False,-
+ACTR2,bimagrumab,False,-
