@@ -1,0 +1,58 @@
+symbol_id,unique_protein_id,interacting_RNA,cell_line,hour,species,study
+CNBP,P62633,genomic,Huh7,24,homo sapien,Schmidt
+nsp6,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+PABPC4,Q13310,genomic,Huh7,24,homo sapien,Schmidt
+nsp15,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+YBX3,P16989,genomic,Huh7,24,homo sapien,Schmidt
+N,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+S,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+YTHDF2,Q9Y5A9,genomic,Huh7,24,homo sapien,Schmidt
+LARP4,Q71RC2,genomic,Huh7,24,homo sapien,Schmidt
+CAPRIN1,Q14444,genomic,Huh7,24,homo sapien,Schmidt
+ORF3a,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+LIN28B,Q6ZN17,genomic,Huh7,24,homo sapien,Schmidt
+STIP1,P31948,genomic,Huh7,24,homo sapien,Schmidt
+YBX1,P67809,genomic,Huh7,24,homo sapien,Schmidt
+PUM1,Q14671,genomic,Huh7,24,homo sapien,Schmidt
+A1CF,Q9NQ94,genomic,Huh7,24,homo sapien,Schmidt
+RAB6D,Q53S08,genomic,Huh7,24,homo sapien,Schmidt
+RTCB,Q9Y3I0,genomic,Huh7,24,homo sapien,Schmidt
+G3BP2,Q9UN86,genomic,Huh7,24,homo sapien,Schmidt
+SYNCRIP,O60506,genomic,Huh7,24,homo sapien,Schmidt
+nsp12,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+PABPC1,P11940,genomic,Huh7,24,homo sapien,Schmidt
+nsp16,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+M,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+SND1,Q7KZF4,genomic,Huh7,24,homo sapien,Schmidt
+UPF1,Q92900,genomic,Huh7,24,homo sapien,Schmidt
+EIF4B,P23588,genomic,Huh7,24,homo sapien,Schmidt
+nsp9,-,genomic,Huh7,24,Severe acute respiratory syndrome coronavirus 2,Schmidt
+RAB6A,P20340,genomic,Huh7,24,homo sapien,Schmidt
+PPP1CC,P36873,genomic,Huh7,24,homo sapien,Schmidt
+CSDE1,O75534,genomic,Huh7,24,homo sapien,Schmidt
+MOV10,Q9HCE1,genomic,Huh7,24,homo sapien,Schmidt
+RPL6,Q02878,genomic,Huh7,24,homo sapien,Schmidt
+EIF4H,Q15056,genomic,Huh7,24,homo sapien,Schmidt
+RPS2,P15880,genomic,Huh7,24,homo sapien,Schmidt
+RBMS2,Q15434,genomic,Huh7,24,homo sapien,Schmidt
+RPS10,P46783,genomic,Huh7,24,homo sapien,Schmidt
+DDX3X,O00571,genomic,Huh7,24,homo sapien,Schmidt
+SCFD1,Q8WVM8,genomic,Huh7,24,homo sapien,Schmidt
+RPS14,P62263,genomic,Huh7,24,homo sapien,Schmidt
+ACTR2,P61160,genomic,Huh7,24,homo sapien,Schmidt
+CFL1,P23528,genomic,Huh7,24,homo sapien,Schmidt
+EIF3E,P60228,genomic,Huh7,24,homo sapien,Schmidt
+STRAP,Q9Y3F4,genomic,Huh7,24,homo sapien,Schmidt
+LSM14A,Q8ND56,genomic,Huh7,24,homo sapien,Schmidt
+HNRNPA1,P09651,genomic,Huh7,24,homo sapien,Schmidt
+SHFL,Q9NUL5,genomic,Huh7,24,homo sapien,Schmidt
+USO1,O60763,genomic,Huh7,24,homo sapien,Schmidt
+IGF2BP2,Q9Y6M1,genomic,Huh7,24,homo sapien,Schmidt
+ANXA1,P04083,genomic,Huh7,24,homo sapien,Schmidt
+RPL15,P61313,genomic,Huh7,24,homo sapien,Schmidt
+HDLBP,Q00341,genomic,Huh7,24,homo sapien,Schmidt
+DDX1,Q92499,genomic,Huh7,24,homo sapien,Schmidt
+PPP1CB,P62140,genomic,Huh7,24,homo sapien,Schmidt
+RPL13,P26373,genomic,Huh7,24,homo sapien,Schmidt
+RPS3,P23396,genomic,Huh7,24,homo sapien,Schmidt
+EIF5A,P63241,genomic,Huh7,24,homo sapien,Schmidt
