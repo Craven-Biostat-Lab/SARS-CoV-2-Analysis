@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter import Scrollbar
 from tkinter import ttk
 
-import csvhandling as ch
+from src import csvhandling as ch
+from src import graph as gh
 
 def main():
     top = tk.Tk()
@@ -13,7 +14,7 @@ def main():
     leftMasterFrame.pack(side=tk.LEFT)
 
     data = ch.Data()
-    data.set("csv/allhumanproteininteractions_v1.csv")
+    data.set("src/csv/allhumanproteininteractions_v1.csv")
     ch.extractData(
         data.get(),
         "B",
@@ -65,7 +66,7 @@ def main():
 
     generateButtonStr = tk.StringVar()
     generateButtonStr.set("Generate graph!")
-    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: ch.graphData(
+    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: gh.graphData(
         data,
         selectionSelectEntry.get(), 
         degreeOptionsVar.get(),

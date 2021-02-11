@@ -1,23 +1,8 @@
 import tkinter as tk
 from tkinter import filedialog
 
-import graph as gh
-
-def getRows(filename):
-    f = open(filename, 'r', encoding="utf8")
-    ret = []
-    for line in f:
-        try: ret.append(line.split(','))
-        except UnicodeEncodeError: continue
-    f.close()
-    return ret
-    
-def getCols(rows):
-    ret = [[] for entry in rows[0]]
-    for row in rows:
-        for i, entry in enumerate(row):
-            ret[i].append(entry)
-    return ret
+from . import graph as gh
+from . import get as get
 
 def alphaToInt(a):
     if a.isnumeric():
@@ -86,7 +71,7 @@ def extractData(s, col1, col2, ig, d):
     # d: Data object
 
     f = open(s, 'r')
-    rows = getRows(s)
+    rows = get.getRows(s)
     colA = alphaToInt(col1)
     colB = alphaToInt(col2)
 
@@ -94,91 +79,6 @@ def extractData(s, col1, col2, ig, d):
         d.graph.buildGraph(row[colA].lower(), row[colB].lower()) # normalize all identifiers to lower case
 
     f.close()
-
-def graphData(d, s, ds, t, c):
-    # d: Data object
-    # s: selected identifier
-    # ds: max degrees of separation
-    # t: text box to output results
-    # c: 1 or 0 as to whether or not we arrange alphabetically
-
-    ignoreHyphen = True
-    ignoreDuplicates = True
-    ignoreDuplicateViral = True
-
-    TABSIZE = 14
-    t.delete(1.0, tk.END)
-    s = s.lower().strip() # normalize to lower case
-    ds = int(ds)
-
-    d.selected = s
-    d.used.add(s)
-    d.disp = "## ONE DEGREE OF SEPARATION:\n"
-    d.layerCount = ds
-    
-    try:
-        if d.graph.nodes == {}:
-            return
-
-        elif not d.graph.nodes.get(s):
-            t.insert(tk.END, "Identifier not found.")
-            return
-
-        # one degree of separation
-        layer1 = []
-        for key in d.graph.nodes[s].keys():
-            if ignoreHyphen and key == "-": continue
-
-            layer1.append(f"{s}\t>>\t{key}".expandtabs(TABSIZE))
-            d.layers[1].add(key)
-            d.interactions.append([s, key, "human-human"])
-            d.used.add(key)
-        
-        if c == 1: layer1.sort()
-        
-        for term in layer1:
-            d.disp += f"{term}\n"
-
-        # two degrees of separation
-        if ds >= 2:
-            d.disp += "\n## TWO DEGREES OF SEPARATION:\n"
-            layer2 = []
-            for prot in d.layers[1]:
-                for key in d.graph.nodes[prot].keys():
-                    if ignoreDuplicates and prot == key: continue   # ignore when interactorA and interactorB are equal
-                    if ignoreHyphen and key == "-": continue        # ignore hyphens
-                    if key == s: continue                           # ignore interactions with original s
-
-                    layer2.append(f"{prot}\t>>\t{key}".expandtabs(TABSIZE))
-                    d.layers[2].add(key)
-                    d.interactions.append([prot, key, "human-human"])
-                    d.used.add(key)
-            
-            if c == 1: layer2.sort()
-
-            for term in layer2:
-                d.disp += f"{term}\n"
-
-        # regardless of # of layers used, search for viral interactions
-        d.disp += "\n## VIRAL INTERACTIONS:\n"
-        viral_interactions = []
-
-        for row in getRows("csv/biogrid_3study_standard_v3.csv")[1:]:
-            if not row[0].lower() in d.used: continue
-
-            term = f"{row[0].lower()}\t>>\t{row[3].lower()}".expandtabs(TABSIZE)
-            if ignoreDuplicateViral and term in viral_interactions: continue
-
-            viral_interactions.append(term)
-            d.interactions.append([row[0].lower(), row[3].lower(), "human-virus"])
-        
-        if c == 1: viral_interactions.sort()
-
-        for term in viral_interactions:
-            d.disp += f"{term}\n"
-
-    except KeyError: d.disp = "Identifier not found."
-    t.insert(tk.END, d.disp)
 
 def outputToCSV(d):
     if d.disp == "" or d.disp == "Identifier not found.": return
