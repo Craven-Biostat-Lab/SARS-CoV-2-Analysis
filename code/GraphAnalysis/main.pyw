@@ -4,6 +4,8 @@ from tkinter import ttk
 
 from src import csvhandling as ch
 from src import graph as gh
+from src import output as op
+from src import scroll as sc
 
 def main():
     top = tk.Tk()
@@ -97,9 +99,9 @@ def main():
     resultsMiddle.pack()
 
     resultsBottom = tk.Frame(resultsFrame)
-    resultsCSVButton = tk.Button(resultsBottom, text="Output to .csv", command=(lambda: ch.outputToCSV(data)))
+    resultsCSVButton = tk.Button(resultsBottom, text="Output to .csv", command=(lambda: op.outputToCSV(data)))
     resultsCSVButton.pack(side=tk.LEFT)
-    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: ch.outputToCytoscape(data)))
+    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: op.outputToCytoscape(data)))
     resultsCytoButton.pack(side=tk.LEFT)
     resultsBottom.pack()
 
@@ -140,7 +142,7 @@ def main():
     jumpStatus.set("")
     jumpStatusLabel = tk.Label(jumpToFrame, textvariable=jumpStatus)
 
-    jumpToGoButton = tk.Button(jumpToLayerFrame, text="Go!", command=(lambda: ch.scrollTo(
+    jumpToGoButton = tk.Button(jumpToLayerFrame, text="Go!", command=(lambda: sc.scrollTo(
         data,
         jumpStatus,
         jumpToSymbolEntry.get(),

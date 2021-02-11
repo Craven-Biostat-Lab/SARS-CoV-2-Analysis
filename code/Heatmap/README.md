@@ -1,13 +1,14 @@
 # Heatmapping the data
 
-## Prerequisites and setup:
+## Prerequisites and setup
 
+* [Python 3+](https://www.python.org/)
 * [pandas](https://pandas.pydata.org/)
-* [matplotlib](https://matplotlib.org/)
-* [seaborn](https://seaborn.pydata.org/)
-* [numpy](https://numpy.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [NumPy](https://numpy.org/)
 
-These prerequisites can be easily installed by running `./setup.sh` in this directory. If they are already present on your machine, they will not be installed again. Alternatively, if bash isn't working on your machine, you could simply copy and paste the pip3 commands found in `setup.sh` into your terminal.
+The Python prerequisites can be easily installed by running `./setup.sh` in this directory. If they are already present on your machine, they will not be installed again. Alternatively, if bash isn't working on your machine, you could simply copy and paste the pip3 commands found in `setup.sh` into your terminal.
 
 ## Using the tool
 
@@ -41,8 +42,8 @@ Here, `TRA2B` and `RRBP1` hold the same three ACs: `Flynn 24 Huh7.5`, `Flynn 24 
 
 There are 2^n possible sets of ACs a protein could have, where n is the number of ACs; in other words, the sum of row n of Pascal's Triangle. Assuming `1` denotes the presence of an AC, a protein could either match every possible AC (`[1, 1, 1, 1, 1, 1, 1]`) or none at all (`[0, 0, 0, 0, 0, 0, 0]`), and everything in between. Now, if we consider these sequences of 0s and 1s as binary values, clusters are arranged by the decimal translation of these sequences, with `0b1111111 = 127` at the top, and `0b0000000 = 0` at the bottom.
 
-If we were interested in looking at all proteins found at ACs `Flynn 24 Huh7.5`, `Flynn 48 Huh7.5`, and `Sherer 8 VeroE6` (columns 1, 3, and 6), this would translate to a sequence of `0b1010010`, or `82` in decimal. Out of the 127 possible clusters, this would place it closer to the top. As it turns out, that's exactly where it is:
+If we were interested in looking at all proteins found at ACs `Flynn 24 Huh7.5`, `Flynn 48 Huh7.5`, and `Sherer 8 VeroE6` (columns 1, 3, and 6), this would translate to a sequence of `0b1010010`, or 82 in decimal. Out of the 127 possible clusters, this would place it closer to the top. As it turns out, that's exactly where it is:
 
 ![find](img/find.gif)
 
-The only matched protein to this cluster is RPL15.
+The only matched protein to this cluster is `RPL15`.
