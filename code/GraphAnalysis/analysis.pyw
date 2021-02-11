@@ -6,14 +6,11 @@ import csvhandling as ch
 
 def main():
     top = tk.Tk()
-    top.title("BioGRID Analysis Tool")
+    top.title("Protein Analysis Tool")
     top.resizable(False, False)
-    #top.geometry("500x280")
 
-    stepOneAndTwoFrame = tk.Frame(top)
-    stepOneAndTwoFrame.pack(side=tk.LEFT)
-
-    ## STEP TWO
+    leftMasterFrame = tk.Frame(top)
+    leftMasterFrame.pack(side=tk.LEFT)
 
     data = ch.Data()
     data.set("csv/allhumanproteininteractions_v1.csv")
@@ -25,89 +22,134 @@ def main():
         data
     )
 
-    stepTwoFrame = tk.Frame(stepOneAndTwoFrame)
-    stepTwoFrame.pack(padx=10, pady=20, side=tk.TOP)
-    
-    ## Top section
+    ## SELECTING THE PROTEIN
 
-    stepTwoTop = tk.Frame(stepTwoFrame)
-    stepTwoLabel = tk.Label(stepTwoTop, text="Step one: select identifier", font="TkDefaultFont 10 bold")
-    stepTwoLabel.pack(side=tk.LEFT)
-    stepTwoTop.pack()
+    selectionFrame = tk.Frame(leftMasterFrame)
+    selectionFrame.pack(padx=10, pady=20, side=tk.TOP)
 
-    stepTwoMid = tk.Frame(stepTwoFrame)
-    stepTwoSelectLabel = tk.Label(stepTwoMid, text="Enter symbol: ")
-    stepTwoSelectLabel.pack(side=tk.LEFT)
-    stepTwoSelectEntry = tk.Entry(stepTwoMid, width=16, font="TkFixedFont")
-    stepTwoSelectEntry.pack(side=tk.LEFT)
-    stepTwoMid.pack()
+    selectionTop = tk.Frame(selectionFrame)
+    selectionLabel = tk.Label(selectionTop, text="Select identifier", font="TkDefaultFont 10 bold")
+    selectionLabel.pack(side=tk.LEFT)
+    selectionTop.pack()
 
-    stepTwoBot = tk.Frame(stepTwoFrame)
-    stepTwoDegreeLabel = tk.Label(stepTwoBot, text="Max distance: ")
-    stepTwoDegreeLabel.pack(side=tk.LEFT)
+    selectionMid = tk.Frame(selectionFrame)
+    selectionSelectLabel = tk.Label(selectionMid, text="Enter symbol: ")
+    selectionSelectLabel.pack(side=tk.LEFT)
+    selectionSelectEntry = tk.Entry(selectionMid, width=16, font="TkFixedFont")
+    selectionSelectEntry.pack(side=tk.LEFT)
+    selectionMid.pack()
+
+    selectionBot = tk.Frame(selectionFrame)
+    selectionDegreeLabel = tk.Label(selectionBot, text="Max distance: ")
+    selectionDegreeLabel.pack(side=tk.LEFT)
     
     degreeOptions = ["1", "2"]
     degreeOptionsVar = tk.StringVar()
     degreeOptionsVar.set(degreeOptions[0])
 
-    degreeOptionsMenu = tk.OptionMenu(stepTwoBot, degreeOptionsVar, *degreeOptions)
+    degreeOptionsMenu = tk.OptionMenu(selectionBot, degreeOptionsVar, *degreeOptions)
     degreeOptionsMenu.pack(side=tk.LEFT)
 
+    ## DISPLAYING RESULTS
     # declare this up here so graphData() can work with elements involved
-    stepThreeFrame = tk.Frame(top) # holds step one: importing data
-    stepThreeMiddle = tk.Frame(stepThreeFrame)
-    stepThreeScrollbar = tk.Scrollbar(stepThreeMiddle)
-    stepThreeText = tk.Text(stepThreeMiddle, height=15, width=45, yscrollcommand=stepThreeScrollbar.set, font="TkFixedFont")
 
-    stepTwoBot2 = tk.Frame(stepTwoFrame)
+    resultsFrame = tk.Frame(top)
+    resultsMiddle = tk.Frame(resultsFrame)
+    resultsScrollbar = tk.Scrollbar(resultsMiddle)
+    resultsText = tk.Text(resultsMiddle, height=30, width=45, yscrollcommand=resultsScrollbar.set, font="TkFixedFont")
+
+    selectionBot2 = tk.Frame(selectionFrame)
     isTicked = tk.IntVar()
-    orderCheckbox = tk.Checkbutton(stepTwoBot2, variable=isTicked, text="Order alphabetically", onvalue=1, offvalue=0)
+    orderCheckbox = tk.Checkbutton(selectionBot2, variable=isTicked, text="Order alphabetically", onvalue=1, offvalue=0)
     orderCheckbox.select()
 
     generateButtonStr = tk.StringVar()
     generateButtonStr.set("Generate graph!")
-    generateButton = tk.Button(stepTwoBot, text="Generate graph!", command=(lambda: ch.graphData(
+    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: ch.graphData(
         data,
-        stepTwoSelectEntry.get(), 
+        selectionSelectEntry.get(), 
         degreeOptionsVar.get(),
-        stepThreeText,
+        resultsText,
         isTicked.get()
     )))
     generateButton.pack(side=tk.LEFT)
-    stepTwoBot.pack()
+    selectionBot.pack()
 
     orderCheckbox.pack(side=tk.LEFT)
-    stepTwoBot2.pack()
+    selectionBot2.pack()
 
-    ## STEP THREE
-
-    stepThreeFrame.pack(padx=10, pady=20, side=tk.RIGHT)
+    resultsFrame.pack(padx=10, pady=20, side=tk.RIGHT)
     
     ## Top section
 
-    stepThreeTop = tk.Frame(stepThreeFrame)
-    stepThreeLabel = tk.Label(stepThreeTop, text="Step two: results", font="TkDefaultFont 10 bold")
-    stepThreeLabel.pack(side=tk.TOP)
-    stepThreeHelp = tk.Label(stepThreeTop, text="identifierA interacts with (>>) identifierB", font="TkDefaultFont 10 italic")
-    stepThreeHelp.pack(side=tk.TOP)
-    stepThreeTop.pack()
+    resultsTop = tk.Frame(resultsFrame)
+    resultsLabel = tk.Label(resultsTop, text="Results", font="TkDefaultFont 10 bold")
+    resultsLabel.pack(side=tk.TOP)
+    resultsHelp = tk.Label(resultsTop, text="identifierA interacts with (>>) identifierB", font="TkDefaultFont 10 italic")
+    resultsHelp.pack(side=tk.TOP)
+    resultsTop.pack()
     
-    # stepThreeScrollBar declared above 
-    stepThreeScrollbar.config(command=stepThreeText.yview)
-    stepThreeScrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-    stepThreeText.pack(side=tk.LEFT)
-    stepThreeMiddle.pack()
+    # resultsScrollBar declared above 
+    resultsScrollbar.config(command=resultsText.yview)
+    resultsScrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+    resultsText.pack(side=tk.LEFT)
+    resultsMiddle.pack()
 
-    stepThreeBottom = tk.Frame(stepThreeFrame)
-    stepThreeCSVButton = tk.Button(stepThreeBottom, text="Find viral interactions and output to .csv", command=(lambda: ch.outputToCSV(data)))
-    stepThreeCSVButton.pack(side=tk.LEFT)
-    """
-    stepThreeCytoButton = tk.Button(stepThreeBottom, text="Output to Cytoscape", command=(lambda: ch.outputToCytoscape(data)))
-    stepThreeCytoButton.pack(side=tk.LEFT)
-    """
-    stepThreeBottom.pack()
+    resultsBottom = tk.Frame(resultsFrame)
+    resultsCSVButton = tk.Button(resultsBottom, text="Output to .csv", command=(lambda: ch.outputToCSV(data)))
+    resultsCSVButton.pack(side=tk.LEFT)
+    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: ch.outputToCytoscape(data)))
+    resultsCytoButton.pack(side=tk.LEFT)
+    resultsBottom.pack()
 
     generateButton.config(text="Generate graph!")
+
+    ## JUMP TO STUFF
+    # declared down here so it can refer to elements from displayed results, defined earlier
+
+    jumpToFrame = tk.Frame(leftMasterFrame)
+    jumpToFrame.pack(padx=10, pady=10, side=tk.TOP)
+
+    jumpToHeader = tk.Label(jumpToFrame, text="Jump to...", font="TkDefaultFont 10 bold")
+    jumpToHeader.pack(side=tk.TOP)
+
+    jumpToSymbolFrame = tk.Frame(jumpToFrame)
+    jumpToSymbolFrame.pack(side=tk.TOP)
+
+    jumpToSymbolLabel = tk.Label(jumpToSymbolFrame, text="Identifier: ")
+    jumpToSymbolLabel.pack(side=tk.LEFT)
+
+    jumpToSymbolEntry = tk.Entry(jumpToSymbolFrame, width=16, font="TkFixedFont")
+    jumpToSymbolEntry.pack(side=tk.LEFT)
+
+    jumpToLayerFrame = tk.Frame(jumpToFrame)
+    jumpToLayerFrame.pack(side=tk.TOP)
+
+    jumpToLayerLabel = tk.Label(jumpToLayerFrame, text="In: ")
+    jumpToLayerLabel.pack(side=tk.LEFT)
+
+    jumpToLayerOptions = ["First layer", "Second layer", "Viral interactions"]
+    jumpToLayerOptionsVar = tk.StringVar()
+    jumpToLayerOptionsVar.set(jumpToLayerOptions[0])
+
+    jumpToLayerOptionsMenu = tk.OptionMenu(jumpToLayerFrame, jumpToLayerOptionsVar, *jumpToLayerOptions)
+    jumpToLayerOptionsMenu.pack(side=tk.LEFT)
+
+    jumpStatus = tk.StringVar()
+    jumpStatus.set("")
+    jumpStatusLabel = tk.Label(jumpToFrame, textvariable=jumpStatus)
+
+    jumpToGoButton = tk.Button(jumpToLayerFrame, text="Go!", command=(lambda: ch.scrollTo(
+        data,
+        jumpStatus,
+        jumpToSymbolEntry.get(),
+        jumpToLayerOptionsVar.get(),
+        resultsText,
+        resultsScrollbar
+    )))
+    jumpToGoButton.pack(side=tk.LEFT)
+    jumpStatusLabel.pack(side=tk.TOP)
+
     top.mainloop()
 
 if __name__ == "__main__":

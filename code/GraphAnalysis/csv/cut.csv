@@ -1,7 +1,0 @@
-unique_protein_id_A,symbol_id_A,species_A,unique_protein_id_B,symbol_id_B,species_B,cell_line,hour,study,interaction_type
-P45985,MAP2K4,homo sapien,Q14315,FLNC,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
-Q86TC9,MYPN,homo sapien,P35609,ACTN2,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
-Q04771,ACVR1,homo sapien,P49354,FNTA,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
-P23769,GATA2,homo sapien,P29590,PML,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
-P15927,RPA2,homo sapien,P40763,STAT3,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
-P84077,ARF1,homo sapien,Q9NZ52,GGA3,homo sapien,-,-,"psi-mi:""MI:0463""(biogrid)",Protein Protein
