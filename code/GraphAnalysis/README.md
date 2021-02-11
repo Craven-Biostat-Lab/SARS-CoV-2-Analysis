@@ -22,7 +22,7 @@ First, we must specify a protein to originate as our "home node" within the gene
 
 ![step1](img/step1.png)
 
-We first enter the symbol of the protein at hand, which is not case-sensitive. Then, we specify max distance away from this protein; as of now, we can only look at 1 or 2 edges away, since anything more than that would take immense computational power to display in Tkinter (greater distances will be possible with a purely terminal-based version of this program for HPC systems). Note that, even with beefier consumer computers, a max distance of 2 will take a few minutes to compute, and will seemingly freeze the window.
+We first enter the symbol of the protein at hand, which is not case-sensitive. Then, we specify max distance away from this protein; as of now, we can only look at 1 or 2 edges away, since anything more than that would take immense computational power to display in Tkinter (greater distances will be possible with a purely terminal-based version of this program for HPC systems). Note that, even with beefier consumer computers, a max distance of 2 will take a few minutes to compute, and will seemingly freeze the window. Do not close the program during this time.
 
 We can specify if we'd like the results sorted alphabetically, before finally asking the program to generate results with the `"Generate graph!"` button.
 
