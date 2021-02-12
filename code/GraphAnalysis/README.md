@@ -46,7 +46,7 @@ Results are displayed in the text box to the right. Interactions between two pro
 
 Interactions are clustered by layer. First shown are any proteins interacting directly with our targeted protein. If max distance is set to 2, it will then list all interactions branching out from this first layer of connections as a second layer.
 
-Regardless of max distance specified, the program will then search for all viral interactions with each protein involved in the graph. This is displayed as the final cluster, under the header `## VIRAL INTERACTIONS:`, as below.
+Regardless of max distance specified, the program will then search for all SARS-CoV-2 interactions with each protein involved in the graph. This is displayed as the final cluster, under the header `## VIRAL INTERACTIONS:`, as below.
 
 ![step2b](img/step2b.png)
 
