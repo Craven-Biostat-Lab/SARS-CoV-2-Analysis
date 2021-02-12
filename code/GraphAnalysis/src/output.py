@@ -1,3 +1,5 @@
+import numpy as np
+
 def outputToCSV(d):
     if d.disp == "" or d.disp == "Identifier not found.": return
 
@@ -9,5 +11,24 @@ def outputToCSV(d):
 
     w.close()
 
-def outputToCytoscape(d):
-    print("Outputting to Cytoscape.")
+def outputToCytoscape(d, error):
+    # d: data object
+    # error: StringVar holding possible error
+
+    if d.disp == "" or d.disp == "Identifier not found.": return
+
+    try:
+        from py2cytoscape.data.cyrest_client import CyRestClient
+        import requests
+        import json
+    
+    except ModuleNotFoundError: 
+        error.set("ModuleNotFoundError: missing\nnecessary prerequisites.")
+
+    try: 
+        cy = CyRestClient()
+        cy.session.delete() # contentious?
+        network = cy.network.create(name=f"{d.selected}_{d.layerCount}layer", collection="{d.selected} protein analysis")
+
+    except requests.exceptions.ConnectionError:
+        error.set("Cytoscape must be running in the\nbackground for this to work!")

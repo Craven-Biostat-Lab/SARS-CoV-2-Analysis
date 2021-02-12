@@ -98,12 +98,22 @@ def main():
     resultsText.pack(side=tk.LEFT)
     resultsMiddle.pack()
 
+    resultsError = tk.Frame(resultsFrame)
+    resultsErrorVar = tk.StringVar()
+    resultsErrorVar.set("\n")
+    resultsErrorDisp = tk.Label(resultsError, textvariable=resultsErrorVar)
+    resultsErrorDisp.pack()
+
     resultsBottom = tk.Frame(resultsFrame)
     resultsCSVButton = tk.Button(resultsBottom, text="Output to .csv", command=(lambda: op.outputToCSV(data)))
     resultsCSVButton.pack(side=tk.LEFT)
-    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: op.outputToCytoscape(data)))
+    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: op.outputToCytoscape(
+        data,
+        resultsErrorVar
+    )))
     resultsCytoButton.pack(side=tk.LEFT)
     resultsBottom.pack()
+    resultsError.pack()
 
     generateButton.config(text="Generate graph!")
 
