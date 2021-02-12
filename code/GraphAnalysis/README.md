@@ -62,7 +62,7 @@ We can use this last feature to jump to a protein of our choosing. The text box 
 
 ### Outputting to `.csv`
 
-You'll notice a button at the bottom of the interfact that allows you to export data to a `.csv` file. This button does exactly what it does on the tin -- it exports the current state of the **Results** text box to a `.csv` file, where the columns are arranged as the following:
+You'll notice a button at the bottom of the interfact that allows you to export data to a `.csv` file. This button does exactly what it does on the tin -- it exports the current state of the **Results** text box to a `.csv` file, where the columns are arranged as in the following example:
 
 | interactorA | interactorB | interactionType |
 | ----------- | ----------- | --------------- |
