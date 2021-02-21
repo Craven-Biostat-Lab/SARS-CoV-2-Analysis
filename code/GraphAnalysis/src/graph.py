@@ -127,7 +127,7 @@ def graphData(d, s, ds, t, c, b, p):
 
 def startThread(d, s, ds, t, c, b, p):
     # every time this function is called, it creates a new th; meaning that th.start() doesn't
-    # call upon the same thread every time. this fixes the runtime error I was encountering.
+    # call upon the same thread every time. this fixes the RuntimeError I was encountering.
     # in addition, setting daemon=True means that there aren't threads in the background if the
     # user attempts to exit the program. truly epic
     th = threading.Thread(target=(lambda: graphData(d, s, ds, t, c, b, p)), daemon=True)
