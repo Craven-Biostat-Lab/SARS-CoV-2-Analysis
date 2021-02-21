@@ -66,14 +66,20 @@ def main():
     orderCheckbox = tk.Checkbutton(selectionBot2, variable=isTicked, text="Order alphabetically", onvalue=1, offvalue=0)
     orderCheckbox.select()
 
+    resultsBarFrame = tk.Frame(resultsFrame)
+    progress = ttk.Progressbar(resultsBarFrame, orient=tk.HORIZONTAL, length=100)
+    progress.pack(ipadx=100)
+
     generateButtonStr = tk.StringVar()
     generateButtonStr.set("Generate graph!")
-    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: gh.graphData(
+    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: gh.startThread(
         data,
         selectionSelectEntry.get(), 
         degreeOptionsVar.get(),
         resultsText,
-        isTicked.get()
+        isTicked.get(),
+        generateButton,
+        progress
     )))
     generateButton.pack(side=tk.LEFT)
     selectionBot.pack()
@@ -111,7 +117,9 @@ def main():
         data,
         resultsErrorVar
     )))
+
     resultsCytoButton.pack(side=tk.LEFT)
+    resultsBarFrame.pack()
     resultsBottom.pack()
     resultsError.pack()
 

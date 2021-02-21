@@ -24,6 +24,7 @@ def outputToCytoscape(d, error):
     
     except ModuleNotFoundError: 
         error.set("ModuleNotFoundError: missing\nnecessary prerequisites.")
+        return
 
     try: 
         cy = CyRestClient()
@@ -32,3 +33,8 @@ def outputToCytoscape(d, error):
 
     except requests.exceptions.ConnectionError:
         error.set("Cytoscape must be running in the\nbackground for this to work!")
+        return
+
+    except UnboundLocalError:
+        error.set("Cytoscape must be running in the\nbackground for this to work!")
+        return

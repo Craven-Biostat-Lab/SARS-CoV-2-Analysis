@@ -1,4 +1,5 @@
 import tkinter as tk
+import threading, math
 from . import get as get
 
 class Graph():
@@ -23,18 +24,22 @@ class Graph():
             else:
                 self.nodes[b][a] += 1
 
-def graphData(d, s, ds, t, c):
+def graphData(d, s, ds, t, c, b, p):
     # d: Data object
     # s: selected identifier
     # ds: max degrees of separation
     # t: text box to output results
     # c: 1 or 0 as to whether or not we arrange alphabetically
+    # b: the Button object
+
+    if s == "": return
 
     ignoreHyphen = True
     ignoreDuplicates = True
     ignoreDuplicateViral = True
 
     TABSIZE = 14
+    b["state"] = "disabled"
     t.delete(1.0, tk.END)
     s = s.lower().strip() # normalize to lower case
     ds = int(ds)
@@ -64,8 +69,11 @@ def graphData(d, s, ds, t, c):
         
         if c == 1: layer1.sort()
         
-        for term in layer1:
+        for i, term in enumerate(layer1):
             d.disp += f"{term}\n"
+            
+            progress = int(math.ceil(((i+1)/(len(layer1)+1))*100))
+            if progress % 5 == 0: p["value"] = progress
 
         # two degrees of separation
         if ds >= 2:
@@ -84,8 +92,11 @@ def graphData(d, s, ds, t, c):
             
             if c == 1: layer2.sort()
 
-            for term in layer2:
+            for i, term in enumerate(layer2):
                 d.disp += f"{term}\n"
+
+                progress = int(math.ceil(((i+1)/(len(layer2)+1))*100))
+                if progress % 5 == 0: p["value"] = progress
 
         # regardless of # of layers used, search for viral interactions
         d.disp += "\n## VIRAL INTERACTIONS:\n"
@@ -102,8 +113,22 @@ def graphData(d, s, ds, t, c):
         
         if c == 1: viral_interactions.sort()
 
-        for term in viral_interactions:
+        for i, term in enumerate(viral_interactions):
             d.disp += f"{term}\n"
+
+            progress = int(math.ceil(((i+1)/(len(viral_interactions)+1))*100))
+            if progress % 5 == 0: p["value"] = progress
 
     except KeyError: d.disp = "Identifier not found."
     t.insert(tk.END, d.disp)
+
+    b["state"] = "normal"
+    p["value"] = 0
+
+def startThread(d, s, ds, t, c, b, p):
+    # every time this function is called, it creates a new th; meaning that th.start() doesn't
+    # call upon the same thread every time. this fixes the runtime error I was encountering.
+    # in addition, setting daemon=True means that there aren't threads in the background if the
+    # user attempts to exit the program. truly epic
+    th = threading.Thread(target=(lambda: graphData(d, s, ds, t, c, b, p)), daemon=True)
+    th.start()

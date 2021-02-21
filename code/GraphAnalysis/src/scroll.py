@@ -73,4 +73,5 @@ def scrollTo(d, e, s, l, txt, scrollbar):
         return
 
     # now scroll to the actual location
-    txt.yview_moveto(position - (1 / lineCount))
+    try: txt.yview_moveto(position - (1 / lineCount))
+    except ZeroDivisionError: return
