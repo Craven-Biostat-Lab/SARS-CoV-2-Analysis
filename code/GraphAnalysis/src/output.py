@@ -3,11 +3,12 @@ import numpy as np
 def outputToCSV(d):
     if d.disp == "" or d.disp == "Identifier not found.": return
 
-    w = open(f"results/{d.selected}_{d.layerCount}layer.csv", 'w')
-    w.write(f"interactorA,interactorB,interactionType\n")
+    if d.headLimited == 0: w = open(f"results/{d.selected}_{d.layerCount}L_{d.neighborCount}N.csv", 'w')
+    else: w = open(f"results/{d.selected}_{d.layerCount}L_{d.neighborCount}N_HL.csv", 'w')
+    w.write(f"interactorA,interactorB,interactorAType,interactorBType,layer,interactionType\n")
 
     for interaction in d.interactions:
-        w.write(f"{interaction[0]},{interaction[1]},{interaction[2]}\n")
+        w.write(f"{interaction[0]},{interaction[1]},{interaction[2]},{interaction[3]},{interaction[4]},{interaction[5]}\n")
 
     w.close()
 

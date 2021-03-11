@@ -36,22 +36,30 @@ def main():
     selectionTop.pack()
 
     selectionMid = tk.Frame(selectionFrame)
-    selectionSelectLabel = tk.Label(selectionMid, text="Enter symbol: ")
+    selectionSelectLabel = tk.Label(selectionMid, text="Identifier: ")
     selectionSelectLabel.pack(side=tk.LEFT)
-    selectionSelectEntry = tk.Entry(selectionMid, width=16, font="TkFixedFont")
+    selectionSelectEntry = tk.Entry(selectionMid, width=12, font="TkFixedFont")
     selectionSelectEntry.pack(side=tk.LEFT)
     selectionMid.pack()
 
     selectionBot = tk.Frame(selectionFrame)
-    selectionDegreeLabel = tk.Label(selectionBot, text="Max distance: ")
-    selectionDegreeLabel.pack(side=tk.LEFT)
-    
-    degreeOptions = ["1", "2"]
-    degreeOptionsVar = tk.StringVar()
-    degreeOptionsVar.set(degreeOptions[0])
+    selectionBotLeft = tk.Frame(selectionBot)
+    selectionBotRight = tk.Frame(selectionBot)
 
-    degreeOptionsMenu = tk.OptionMenu(selectionBot, degreeOptionsVar, *degreeOptions)
-    degreeOptionsMenu.pack(side=tk.LEFT)
+    selectionDegreeLabel = tk.Label(selectionBotLeft, text="Max distance: ")
+    selectionDegreeLabel.pack(side=tk.TOP)
+    
+    degreeEntry = tk.Entry(selectionBotRight, width=4, font="TkFixedFont")
+    degreeEntry.pack(side=tk.TOP)
+
+    neighborsLabel = tk.Label(selectionBotLeft, text="Max neighbors: ")
+    neighborsLabel.pack(side=tk.TOP)
+
+    neighborsEntry = tk.Entry(selectionBotRight, width=4, font="TkFixedFont")
+    neighborsEntry.pack(side=tk.TOP)
+
+    selectionBotLeft.pack(side=tk.LEFT)
+    selectionBotRight.pack(side=tk.LEFT)
 
     ## DISPLAYING RESULTS
     # declare this up here so graphData() can work with elements involved
@@ -62,22 +70,30 @@ def main():
     resultsText = tk.Text(resultsMiddle, height=30, width=45, yscrollcommand=resultsScrollbar.set, font="TkFixedFont")
 
     selectionBot2 = tk.Frame(selectionFrame)
-    isTicked = tk.IntVar()
-    orderCheckbox = tk.Checkbutton(selectionBot2, variable=isTicked, text="Order alphabetically", onvalue=1, offvalue=0)
+    alphaTicked = tk.IntVar()
+    orderCheckbox = tk.Checkbutton(selectionBot2, variable=alphaTicked, text="Order alphabetically", onvalue=1, offvalue=0)
     orderCheckbox.select()
+
+    selectionBot3 = tk.Frame(selectionFrame)
+    limitTicked = tk.IntVar()
+    limitCheckbox = tk.Checkbutton(selectionBot3, variable=limitTicked, text="Limit starting neighbors", onvalue=1, offvalue=0)
+    limitCheckbox.pack()
 
     resultsBarFrame = tk.Frame(resultsFrame)
     progress = ttk.Progressbar(resultsBarFrame, orient=tk.HORIZONTAL, length=100)
     progress.pack(ipadx=100)
 
+    selectionMostBottom = tk.Frame(selectionFrame)
     generateButtonStr = tk.StringVar()
     generateButtonStr.set("Generate graph!")
-    generateButton = tk.Button(selectionBot, text="Generate graph!", command=(lambda: gh.startThread(
+    generateButton = tk.Button(selectionMostBottom, text="Generate graph!", command=(lambda: gh.startThread(
         data,
         selectionSelectEntry.get(), 
-        degreeOptionsVar.get(),
+        degreeEntry.get(),
+        neighborsEntry.get(),
         resultsText,
-        isTicked.get(),
+        alphaTicked.get(),
+        limitTicked.get(),
         generateButton,
         progress
     )))
@@ -86,6 +102,8 @@ def main():
 
     orderCheckbox.pack(side=tk.LEFT)
     selectionBot2.pack()
+    selectionBot3.pack()
+    selectionMostBottom.pack()
 
     resultsFrame.pack(padx=10, pady=20, side=tk.RIGHT)
     
@@ -140,31 +158,40 @@ def main():
     jumpToSymbolLabel = tk.Label(jumpToSymbolFrame, text="Identifier: ")
     jumpToSymbolLabel.pack(side=tk.LEFT)
 
-    jumpToSymbolEntry = tk.Entry(jumpToSymbolFrame, width=16, font="TkFixedFont")
+    jumpToSymbolEntry = tk.Entry(jumpToSymbolFrame, width=12, font="TkFixedFont")
     jumpToSymbolEntry.pack(side=tk.LEFT)
 
     jumpToLayerFrame = tk.Frame(jumpToFrame)
     jumpToLayerFrame.pack(side=tk.TOP)
 
-    jumpToLayerLabel = tk.Label(jumpToLayerFrame, text="In: ")
+    jumpToLayerLabel = tk.Label(jumpToLayerFrame, text="In layer: ")
     jumpToLayerLabel.pack(side=tk.LEFT)
 
+    jumpToLayerEntry = tk.Entry(jumpToLayerFrame, width=4, font="TkFixedFont")
+    jumpToLayerEntry.pack(side=tk.LEFT)
+
+    """
     jumpToLayerOptions = ["First layer", "Second layer", "Viral interactions"]
     jumpToLayerOptionsVar = tk.StringVar()
     jumpToLayerOptionsVar.set(jumpToLayerOptions[0])
 
     jumpToLayerOptionsMenu = tk.OptionMenu(jumpToLayerFrame, jumpToLayerOptionsVar, *jumpToLayerOptions)
     jumpToLayerOptionsMenu.pack(side=tk.LEFT)
+    """
 
     jumpStatus = tk.StringVar()
     jumpStatus.set("")
     jumpStatusLabel = tk.Label(jumpToFrame, textvariable=jumpStatus)
 
+    # adding space between layer entry and go button...of course this is optimal wym
+    jumpToPadding = tk.Label(jumpToLayerFrame, text=" ")
+    jumpToPadding.pack(side=tk.LEFT)
+
     jumpToGoButton = tk.Button(jumpToLayerFrame, text="Go!", command=(lambda: sc.scrollTo(
         data,
         jumpStatus,
         jumpToSymbolEntry.get(),
-        jumpToLayerOptionsVar.get(),
+        jumpToLayerEntry.get(),
         resultsText,
         resultsScrollbar
     )))

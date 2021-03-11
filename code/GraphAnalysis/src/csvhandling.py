@@ -31,10 +31,10 @@ class Data():
         self.interactions = []
         self.used = set()
 
-        self.layerCount = 1
+        self.layerCount = 0
+        self.neighborCount = 0
+        self.headLimited = 0
         self.layers = {}
-        for i in range(2):
-            self.layers[i+1] = set()
 
     def set(self, s):
         self.name = s
