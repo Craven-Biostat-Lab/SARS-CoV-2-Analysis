@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import Scrollbar
 from tkinter import ttk
-from PIL import Image, ImageTk
 
 from src import csvhandling as ch
 from src import graph as gh
@@ -26,14 +25,19 @@ def main():
         data
     )
 
-    logoFrame = tk.Frame(leftMasterFrame)
-    logoFrame.pack(padx=10, side=tk.TOP)
+    try: # make the logo optional
+        from PIL import Image, ImageTk
 
-    logo = Image.open("img/logo_small.png")
-    logoTk = ImageTk.PhotoImage(logo)
+        logoFrame = tk.Frame(leftMasterFrame)
+        logoFrame.pack(padx=10, side=tk.TOP)
 
-    logoLabel = tk.Label(logoFrame, image=logoTk)
-    logoLabel.pack()
+        logo = Image.open("img/logo_small.png")
+        logoTk = ImageTk.PhotoImage(logo)
+
+        logoLabel = tk.Label(logoFrame, image=logoTk)
+        logoLabel.pack()
+
+    except ModuleNotFoundError: pass
 
     selectionFrame = tk.Frame(leftMasterFrame)
     selectionFrame.pack(padx=10, pady=20, side=tk.TOP)
