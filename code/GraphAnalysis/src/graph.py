@@ -48,6 +48,7 @@ def graphData(d, s, ds, ns, t, c, nt, b, p):
     # resetting everything in d
     d.selected = s
     d.used = set()
+    d.viralUsed = set()
     d.used.add(s)
     d.disp = "## LAYER 1:\n" # this also resets d.disp
     d.layerCount = ds
@@ -124,6 +125,7 @@ def graphData(d, s, ds, ns, t, c, nt, b, p):
             term = f"{row[0].lower()}\t>>\t{row[3].lower()}".expandtabs(TABSIZE)
             if ignoreDuplicateViral and term in viral_interactions: continue
 
+            d.viralUsed.add(row[3].lower())
             viral_interactions.append(term)
             d.interactions.append([row[0].lower(), row[3].lower(), "human", "virus", len(layers)+1, "human-virus"])
         

@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import Scrollbar
 from tkinter import ttk
+from PIL import Image, ImageTk
 
 from src import csvhandling as ch
 from src import graph as gh
@@ -25,7 +26,14 @@ def main():
         data
     )
 
-    ## SELECTING THE PROTEIN
+    logoFrame = tk.Frame(leftMasterFrame)
+    logoFrame.pack(padx=10, side=tk.TOP)
+
+    logo = Image.open("img/logo_small.png")
+    logoTk = ImageTk.PhotoImage(logo)
+
+    logoLabel = tk.Label(logoFrame, image=logoTk)
+    logoLabel.pack()
 
     selectionFrame = tk.Frame(leftMasterFrame)
     selectionFrame.pack(padx=10, pady=20, side=tk.TOP)
@@ -131,9 +139,10 @@ def main():
     resultsBottom = tk.Frame(resultsFrame)
     resultsCSVButton = tk.Button(resultsBottom, text="Output to .csv", command=(lambda: op.outputToCSV(data)))
     resultsCSVButton.pack(side=tk.LEFT)
-    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: op.outputToCytoscape(
+    resultsCytoButton = tk.Button(resultsBottom, text="Output to Cytoscape", command=(lambda: op.startCytoscapeThread(
         data,
-        resultsErrorVar
+        resultsErrorVar,
+        resultsCytoButton
     )))
 
     resultsCytoButton.pack(side=tk.LEFT)

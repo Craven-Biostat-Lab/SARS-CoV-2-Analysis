@@ -1,4 +1,4 @@
-# Protein Analysis Tool 
+![logo](img/logo.png)
 
 ## Easily generate graphs of interactions stemming from a protein of your choice.
 
@@ -6,6 +6,7 @@
 
 * [Python 3+](https://www.python.org/)
 * [Tkinter](https://docs.python.org/3/library/tkinter.html)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 Most of this tool only requires Tkinter as an outside prerequisite. To install, run `sudo apt-get install python-tk` from your Linux terminal, or follow [these instructions](https://tkdocs.com/tutorial/install.html) on a different operating system.
 
@@ -18,7 +19,7 @@ If you want to port data directly out to Cytoscape, you will need:
 * [requests](https://requests.readthedocs.io/en/master/)
 * [json](https://docs.python.org/3/library/json.html)
 
-You can install `py2cytoscape` through a terminal by running `pip install py2cytoscape`, or by following the instructions in the hyperlink above. `json` is probably already installed on your system. To install `requests`, `pip install requests` should do the trick if it isn't already on your machine.
+You can install `py2cytoscape` through a terminal by running `pip install py2cytoscape`, or by following the instructions in the hyperlink above. `json` is probably already installed on your system. To install `requests`, `pip install requests` should do the trick if it isn't already on your machine. The same goes for Pillow, which can be added via `pip install pillow`.
 
 ## Using the tool
 

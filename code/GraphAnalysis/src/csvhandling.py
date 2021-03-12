@@ -30,6 +30,7 @@ class Data():
         self.selected = ""
         self.interactions = []
         self.used = set()
+        self.viralUsed = set()
 
         self.layerCount = 0
         self.neighborCount = 0
