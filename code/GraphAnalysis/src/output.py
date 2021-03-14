@@ -25,9 +25,8 @@ def outputToCytoscape(d, error, b):
     error.set("Processing Cytoscape request...\n")
 
     # declare filename here in case user hasn't yet outputted to .csv
-    filename = f"results/{d.selected}_{d.layerCount}L_{d.neighborCount}N"
-    if d.headLimited == 0: filename += ".csv"
-    else: filename += "_HL.csv"
+    filename = f"{d.selected}_{d.layerCount}L_{d.neighborCount}N"
+    if d.headLimited == 1: filename += "_HL"
 
     try:
         from py2cytoscape.data.cyrest_client import CyRestClient
