@@ -184,15 +184,6 @@ def main():
     jumpToLayerEntry = tk.Entry(jumpToLayerFrame, width=5, font="TkFixedFont")
     jumpToLayerEntry.pack(side=tk.LEFT)
 
-    """
-    jumpToLayerOptions = ["First layer", "Second layer", "Viral interactions"]
-    jumpToLayerOptionsVar = tk.StringVar()
-    jumpToLayerOptionsVar.set(jumpToLayerOptions[0])
-
-    jumpToLayerOptionsMenu = tk.OptionMenu(jumpToLayerFrame, jumpToLayerOptionsVar, *jumpToLayerOptions)
-    jumpToLayerOptionsMenu.pack(side=tk.LEFT)
-    """
-
     jumpStatus = tk.StringVar()
     jumpStatus.set("")
     jumpStatusLabel = tk.Label(jumpToFrame, textvariable=jumpStatus)
