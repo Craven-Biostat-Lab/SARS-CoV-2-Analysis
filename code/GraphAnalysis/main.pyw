@@ -38,6 +38,7 @@ def main():
         logoLabel.pack()
 
     except ModuleNotFoundError: pass
+    except ImportError: pass
 
     selectionFrame = tk.Frame(leftMasterFrame)
     selectionFrame.pack(padx=10, pady=20, side=tk.TOP)
