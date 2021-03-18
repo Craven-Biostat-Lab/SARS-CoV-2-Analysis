@@ -57,7 +57,7 @@ def scrollTo(d, e, s, l, txt, scrollbar):
 
     # if in any other layer
     else:
-        if len(d.layers[2]) == 0:   # check if we can even do this
+        if l > d.layerCount:   # check if we can even do this
             e.set("Layer out of bounds.")
             return
 
