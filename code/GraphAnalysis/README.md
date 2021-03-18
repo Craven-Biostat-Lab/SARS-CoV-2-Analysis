@@ -2,16 +2,23 @@
 
 # Easily generate graphs of interactions stemming from a protein of your choice.
 
+## Table of Contents:
+
+- [Prerequisites and setup](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#prerequisites-and-setup)
+- [Using the tool](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#using-the-tool)
+  - [Step one: selecting a protein](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#step-one-selecting-a-protein)
+  - [Step two: viewing the results](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#step-two-viewing-results)
+  - [Step three: jumping to a specific protein](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#step-three-jumping-to-a-specific-protein)
+- [Outputting to `.csv` and Cytoscape](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#outputting-to-csv-and-cytoscape)
+  - [Outputting to `.csv`](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#outputting-to-csv)
+  - [Outputting to Cytoscape](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#outputting-to-cytoscape)
+
 ## Prerequisites and setup
 
 * [Python 3+](https://www.python.org/)
 * [Tkinter](https://docs.python.org/3/library/tkinter.html)
 
-Most of this tool only requires Tkinter as an outside prerequisite. To install, run `sudo apt-get install python-tk` from your Linux terminal, or follow [these instructions](https://tkdocs.com/tutorial/install.html) on a different operating system.
-
-## Porting to Cytoscape
-
-If you want to port data directly out to Cytoscape, you will need:
+Most of this tool only requires Tkinter as an outside prerequisite. To install, run `sudo apt-get install python-tk` from your Linux terminal, or follow [these instructions](https://tkdocs.com/tutorial/install.html) on a different operating system. If you want to port data directly out to Cytoscape, you will need:
 
 * [Cytoscape 3.5+](https://cytoscape.org/)
 * [py2cytoscape](https://py2cytoscape.readthedocs.io/en/latest/#installation)
