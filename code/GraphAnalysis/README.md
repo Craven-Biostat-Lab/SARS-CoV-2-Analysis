@@ -1,6 +1,4 @@
-![logo](img/logo.png)
-
-# Easily generate graphs of interactions stemming from a protein of your choice.
+# Protein Analysis Tool: Easily generate graphs of interactions stemming from a protein of your choice.
 
 ## Table of Contents:
 
