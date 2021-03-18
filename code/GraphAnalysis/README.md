@@ -88,4 +88,4 @@ As previously mentioned, this functionality requires [certain prerequisites](htt
 
 The program will port each node and edge over one at a time, and will subsequently arrange them in Cytoscape's Circular Layout. You can rearrange or format the graph however you like, and I've found that the yFiles Radial Layout usually does a nice job of showing nodes in relation to their distance from the head node.
 
-**Pro tip!** The import process moves a lot quicker if you don't preview the graph as it's being generated. Deselecting the network as it's being imported to vastly increase import speeds.
+**Pro tip!** The import process moves a lot quicker if you don't preview the graph as it's being generated. Deselect the network as it's being imported to vastly increase import speeds.
