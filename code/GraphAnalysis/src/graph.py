@@ -51,7 +51,6 @@ def graphData(d, s, ds, ns, t, c, nt, b, p):
     d.viralUsed = set()
     d.used.add(s)
     d.disp = "## LAYER 1:\n" # this also resets d.disp
-    d.layerCount = ds
     d.layers = {}
     d.interactions = []
     d.headLimited = nt

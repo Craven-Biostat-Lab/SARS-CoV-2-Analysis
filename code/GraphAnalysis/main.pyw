@@ -181,7 +181,7 @@ def main():
     jumpToLayerLabel = tk.Label(jumpToLayerFrame, text="In layer: ")
     jumpToLayerLabel.pack(side=tk.LEFT)
 
-    jumpToLayerEntry = tk.Entry(jumpToLayerFrame, width=4, font="TkFixedFont")
+    jumpToLayerEntry = tk.Entry(jumpToLayerFrame, width=5, font="TkFixedFont")
     jumpToLayerEntry.pack(side=tk.LEFT)
 
     """
