@@ -13,14 +13,15 @@ def scrollTo(d, e, s, l, txt, scrollbar):
     found = False
     position = 0.0
 
-    try: 
-        if l.lower()[0] == "v":
-            l = d.layerCount + 1
+    if l.lower()[0] == "v":
+        l = d.layerCount + 1
 
-        else: 
-            l = int(l)
+    elif l.isnumeric(): 
+        l = int(l)
 
-    except ValueError: e.set("Invalid layer selected.")
+    else: 
+        e.set("Invalid layer selected.")
+        return
 
     # if searching in first layer
     if l == 1:
@@ -66,6 +67,7 @@ def scrollTo(d, e, s, l, txt, scrollbar):
             term = line.split()[0]
             
             if term == "##":
+                if line.split()[1] == "VIRAL": break
                 try: currentLayer = int(line.split()[-1][0])
                 except ValueError: continue # this happens when it gets to viral later
 
