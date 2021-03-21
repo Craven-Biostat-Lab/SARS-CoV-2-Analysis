@@ -80,7 +80,7 @@ Here, `interactorA` and `interactorB` denote the two proteins involved in an int
 
 ### Outputting to Cytoscape
 
-As previously mentioned, this functionality requires [certain prerequisites](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#porting-to-cytoscape), and **you must run Cytoscape in the background for the button to work at all**. With this in mind, the `Output to Cytoscape` is a great way to port your data over to Cytoscape with the simple click of a button.
+As previously mentioned, this functionality requires [certain prerequisites](https://github.com/Craven-Biostat-Lab/SARS-CoV-2-Analysis/tree/main/code/GraphAnalysis#prerequisites-and-setup), and **you must run Cytoscape in the background for the button to work at all**. With this in mind, the `Output to Cytoscape` is a great way to port your data over to Cytoscape with the simple click of a button.
 
 ![cytoscape_preview](img/cytoscape.png)
 
